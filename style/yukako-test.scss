@@ -64,12 +64,19 @@ main {
 
    .member{
     display: flex;
-    flex-direction: row;
-    gap: 5vw;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+        .TitleEmail{
+            display: flex;
+            justify-content: space-between;
+            color: #888888;
+        }
 
         .portrait{
-            width: 20vw;
-            height: 20vw;
+            width: 40vh;
+            height: 40vh;
             border-radius: 50%;
         }
    }

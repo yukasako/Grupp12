@@ -56,11 +56,17 @@ main {
 }
 .members .member {
   display: flex;
-  flex-direction: row;
-  gap: 5vw;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.members .member .TitleEmail {
+  display: flex;
+  justify-content: space-between;
+  color: #888888;
 }
 .members .member .portrait {
-  width: 20vw;
-  height: 20vw;
+  width: 40vh;
+  height: 40vh;
   border-radius: 50%;
 }/*# sourceMappingURL=yukako-test.css.map */
