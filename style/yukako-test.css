@@ -1,4 +1,8 @@
 /* test SCSS to check HTML*/
+body {
+  background: url("img/topImage.jpg") center center/cover no-repeat fixed;
+}
+
 main {
   width: 100%;
   display: flex;
@@ -48,24 +52,25 @@ main {
   border-radius: 10px;
 }
 
-.members {
+.container {
   width: 80%;
   display: flex;
   flex-direction: column;
+  align-items: center;
   gap: 5vh;
 }
-.members .member {
+.container .member {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
 }
-.members .member .TitleEmail {
+.container .member .TitleEmail {
   display: flex;
   justify-content: space-between;
   color: #888888;
 }
-.members .member .portrait {
+.container .member .portrait {
   width: 40vh;
   height: 40vh;
   border-radius: 50%;
