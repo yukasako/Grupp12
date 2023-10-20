@@ -3,7 +3,128 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <title>Kontakt</title>
+    <link rel="stylesheet" href="kontakt.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css"
+    />
   </head>
-  <body></body>
+  <body>
+    <header>
+      <nav>
+        <div class="navbar">
+          <a href="#">Home</a>
+          <a href="#">About Us</a>
+          <a href="#">Products</a>
+          <a href="#">Contact</a>
+        </div>
+      </nav>
+    </header>
+
+    <div class="container">
+      <h1>Kontakta oss</h1>
+      <div class="wrapper">
+        <div class="image">
+          <img src="/Grupp12/img/2.jpeg" alt="" />
+        </div>
+        <div class="kontakt">
+          <p>
+            <label for="">Namn</label>
+            <input type="text" name="name" />
+          </p>
+          <p>
+            <label for="">Emai adress</label>
+            <input type="email" name="email" />
+          </p>
+          <p>
+            <label for="">Telefone Nummer</label>
+            <input type="number" name="number" />
+          </p>
+          <p>
+            <label for="djurägare"
+              ><input
+                id="djurägare"
+                type="radio"
+                name="account-type"
+                class="inline"
+              />
+              Djurägare</label
+            >
+            <label for="djurägare"
+              ><input
+                id="Djurlåntagare"
+                type="radio"
+                name="account-type"
+                class="inline"
+              />
+              Djurlåntagare</label
+            >
+          </p>
+          <label for="referrer"
+            >Ämnet för din mail
+            <select id="referrer" name="referrer">
+              <option value="">(select one)</option>
+              <option value="1">Topic1</option>
+              <option value="2">Topic2</option>
+              <option value="3">Topic3</option>
+              <option value="4">Other</option>
+            </select>
+          </label>
+          <p class="full">
+            <label for=""></label>
+            <textarea
+              id="bio"
+              name="message"
+              rows="5"
+              placeholder="Write the text..."
+            ></textarea>
+          </p>
+          <p class="full">
+            <button>Skika in</button>
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <footer>
+      <div class="footer">
+        <h4>about</h4>
+        <ul>
+          <li><a href="#">About us</a></li>
+          <li><a href="#">Member stories</a></li>
+          <li><a href="#">Refer a Friend</a></li>
+          <li><a href="#">Privacy Policy</a></li>
+        </ul>
+      </div>
+      <div class="footer">
+        <h4>Learn more</h4>
+        <ul>
+          <li><a href="#">How it works</a></li>
+          <li><a href="#">Safety and Insurance</a></li>
+          <li><a href="#">Membership</a></li>
+        </ul>
+      </div>
+      <div class="footer">
+        <h4>Need help</h4>
+        <ul>
+          <li><a href="#">Help & FAQs</a></li>
+          <li><a href="#">Contact us</a></li>
+          <li><a href="#">Call us: 000 000 00 00</a></li>
+          <li><a href="#">Hours: Mon-Fri 9am-5pm</a></li>
+        </ul>
+      </div>
+      <div class="footer">
+        <h4>follow us</h4>
+        <div class="links">
+          <a href="#"><i class="fab fa-linkedin-in"></i></a>
+          <a href="#"><i class="fab fa-facebook-f"></i></a>
+          <a href="#"><i class="fab fa-twitter"></i></a>
+          <a href="#"><i class="fab fa-instagram"></i></a>
+        </div>
+      </div>
+      <div class="footer_separator"></div>
+      <div class="footer_copyright">FindAFriend2023</div>
+    </footer>
+  </body>
 </html>
