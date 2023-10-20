@@ -1,21 +1,32 @@
-$c-1:rgb(126, 207, 50);
-$c-2:black;
-$c-3:#426a5a;
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+$c-1: white;
+$c-2: black;
+$c-3: #426a5a;
 $c-4: #f4d1ae;
 $c-5: #db5c5c;
 $c-6: orange;
 
-$font-1:serif;
-$font-2:arial;
+$font-1: serif;
+$font-2: arial;
 
-$xs:0.2rem;
-$s:0.5rem;
-$m:1rem;
-$l:2rem;
-$xl:4rem;
+$xs: 0.2rem;
+$s: 0.5rem;
+$m: 1rem;
+$l: 2rem;
+$xl: 4rem;
 
-@mixin mobile(){
-    @media(max-width:1080px){
-        
-    }
+@mixin mobile() {
+  @media (max-width: 1080px) {
+  }
+}
+
+@mixin buttonHover() {
+  cursor: pointer;
+  border: solid 2px $c-6;
+  transition-duration: 300ms;
 }

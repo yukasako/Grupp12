@@ -1,0 +1,49 @@
+#navbar-links {
+  display: none;
+}
+
+#referenserBODY {
+  #referenser {
+    margin-top: $l;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    .reviewCard {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      width: 200px;
+      height: 400px;
+      margin-bottom: $xl;
+
+      img {
+        border-radius: 50%;
+        width: 150px;
+        height: 150px;
+        margin-bottom: $s;
+      }
+      h1 {
+        font-size: $l;
+        margin-bottom: $m;
+      }
+      .container {
+        background-color: $c-5;
+        border-radius: $s;
+        .container {
+          display: flex;
+          justify-content: space-between;
+          padding: $m;
+
+          svg {
+            color: yellow;
+          }
+        }
+        p {
+          padding: $m;
+          padding-top: 0;
+        }
+      }
+    }
+  }
+}
