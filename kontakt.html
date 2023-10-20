@@ -3,7 +3,105 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <title>Kontakt</title>
+    <link rel="stylesheet" href="kontakt.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css"
+    />
   </head>
-  <body></body>
+  <body>
+    <!-- <div class="login">  -->
+    <!-- <a href="#">Home</a>
+            <a href="#">About Us</a>
+            <a href="#">Products</a>
+            <a href="#">Contact</a>
+          </div>  -->
+    <!-- </nav>  -->
+
+    <div class="container">
+      <div class="header">
+        <img src="/Grupp12/img/logo.png" alt="" />
+        <h3>Petpals</h3>
+      </div>
+
+      <div class="wrapper">
+        <div class="image">
+          <img src="/Grupp12/img/building.png" alt="" />
+        </div>
+
+        <div class="form">
+          <h1>Contact us</h1>
+
+          <p>
+            <label for="">Name</label>
+            <input type="text" name="name" />
+          </p>
+          <p>
+            <label for="">Email </label>
+            <input type="email" name="email" />
+          </p>
+          <p>
+            <label for="">Phone number</label>
+            <input type="number" name="number" />
+          </p>
+          <p>
+            <label for="owner"
+              ><input
+                id="owner"
+                type="radio"
+                name="account-type"
+                class="inline"
+              />
+              pet owner</label
+            >
+            <label for="renter"
+              ><input
+                id="renter"
+                type="radio"
+                name="account-type"
+                class="inline"
+              />
+              caretaker</label
+            >
+          </p>
+          <label for="topic">
+            <p>Topic of your mail</p>
+            <select id="topic" name="topic">
+              <option value="">(select one)</option>
+              <option value="1">Pet owner registration</option>
+              <option value="2">Pet availability</option>
+              <option value="3">Feedback and suggestions</option>
+              <option value="4">Other</option>
+            </select>
+          </label>
+          <p class="full">
+            <label for=""></label>
+            <textarea
+              id="bio"
+              name="message"
+              rows="5"
+              placeholder="Write the text..."
+            ></textarea>
+          </p>
+          <p>
+            <button>Submit</button>
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <footer>
+      <nav>
+        <div class="navbar">
+          <a href="#">Home</a>
+          <a href="#">About Us</a>
+          <a href="#">Products</a>
+          <a href="#">Contact</a>
+          <a href="#"><i class="fab fa-instagram"></i></a>
+          <a href="#"><i class="fab fa-facebook-f"></i></a>
+        </div>
+      </nav>
+    </footer>
+  </body>
 </html>
