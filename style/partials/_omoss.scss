@@ -1,22 +1,11 @@
-
-/* test SCSS to check HTML*/
-
-body{
-    background: url("img/topImage.jpg") center center / cover no-repeat fixed;
-}
-
-main {
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-}
-
 /*Om oss*/
 
 .hero {
-    height: 30vh;
+    width: 80vh;
+}
+
+h2 {
+    text-align: center;
 }
 
 .timeline {
@@ -52,7 +41,7 @@ main {
                     left: -10px; //widthの半分の値を指定
                     width: 20px;
                     height: 20px;
-                    background-color: #00c2bc;
+                    background-color: $c-3;
                     border-radius: 10px;
                 }
             }
