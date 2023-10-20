@@ -100,7 +100,7 @@ h1,
 .container button {
     width: 150px;
     height: 40px;
-    background: rgba(66, 106, 90, 1);
+    background: #426a5a;
     border-radius: 5px;
     color: white;
     border: 0;
@@ -109,7 +109,7 @@ h1,
 }
 
 button:hover {
-    background: rgb(140, 218, 186);
+    background: rgb(143, 146, 145);
 }
 
 footer {
