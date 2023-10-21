@@ -161,6 +161,27 @@
   }
 }
 
+nav {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  background-color: white;
+}
+
+#navbar-links {
+  position: fixed;
+  width: 100vw;
+  height: 100vh;
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+#navbar-links a {
+  margin: 0.5rem;
+}
+
 /*Om oss*/
 .omoss .hero {
   width: 80%;
