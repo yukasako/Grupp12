@@ -2,25 +2,6 @@
   box-sizing: border-box;
 }
 
-.header {
-  background-color: rgb(244, 239, 239);
-  display: flex;
-  align-items: center;
-  padding: 10px;
-  height: 100px;
-  width: 100%;
-}
-
-.header img {
-  width: 30px;
-  height: 30px;
-}
-
-.header h3 {
-  font-size: 40px;
-  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
-}
-
 body {
   background-color: white;
   color: black;
@@ -31,6 +12,8 @@ body {
 
 .wrapper {
   padding: 1em;
+  display: flex;
+  flex-direction: column;
 }
 
 .container {
@@ -44,12 +27,13 @@ body {
 img {
   width: 400px;
   height: 200px;
+  margin: 20px;
 }
 
-h1,
-.image {
+h1 {
   text-align: center;
-  margin: 10px;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  font-weight: 150;
 }
 
 .form {
@@ -57,83 +41,111 @@ h1,
   background: lightgray;
   padding: 20px 20px;
   text-align: justify;
-}
-
-.form label {
-  display: block;
-  justify-content: center;
-}
-
-.form p {
-  margin: 0;
-}
-
-.form p.full {
-  grid-column: 1 / 3;
-}
-
-/* .form label {
-    display: inline-block;
-    width: 100px;
-
-} */
-
-/* .form input {
-    display: inline-block;
-    width: 200px;
-    margin-right: 10px;
-} */
-
-.container button {
-  width: 150px;
-  height: 40px;
-  background: #426a5a;
+  font-size: 19px;
   border-radius: 5px;
-  color: white;
-  border: 0;
-  text-transform: uppercase;
-  cursor: pointer;
+
+  p {
+    margin: auto;
+  }
+
+  .contacts {
+    label {
+      display: inline-block;
+      width: 100px;
+    }
+
+    input {
+      display: inline-block;
+      width: 200px;
+      height: 30px;
+      margin: 20px;
+      border-radius: 5px;
+    }
+  }
+
+  .account-type {
+    display: flex;
+    font-size: 18px;
+
+    input {
+      height: 10px;
+      width: 20px;
+    }
+  }
+
+  textarea {
+    border-radius: 5px;
+  }
+
+  .container {
+    button {
+      width: 150px;
+      height: 40px;
+      background: #426a5a;
+      border-radius: 5px;
+      color: white;
+      border: 0;
+      text-transform: uppercase;
+      cursor: pointer;
+
+      &:hover {
+        background: rgb(143, 146, 145);
+      }
+    }
+  }
 }
 
-button:hover {
-  background: rgb(143, 146, 145);
+.address {
+  display: flex;
+  align-items: center;
 }
 
-footer {
-  width: 100%;
-  justify-items: center;
+.footer-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 1170px;
+  margin: 0 auto;
+  background-color: white;
+
+  .address-item {
+    display: flex;
+    align-items: center;
+    margin-right: 10px;
+
+    img {
+      margin-right: 5px;
+      width: 20px;
+      height: 20px;
+    }
+  }
 }
 
-.navbar {
-  color: black;
-  padding: 10px;
-  text-align: center;
-  justify-content: center;
+.line {
+  border: 1px solid #ccc; // Change the color and style as desired
+  // Add margin for spacing
 }
 
-.navbar a {
+.footer-links a,
+.footer-social a {
   text-decoration: none;
   color: black;
-  /* Змініть колір тексту посилань за вашим вибором */
-  margin: 10px;
+  font-size: 30px;
+  margin: 0 10px;
+  display: inline;
 }
 
-/* DESKTOP*/
-
-@media (min-width: 700px) {
+/* DESKTOP */
+@media (min-width: 1080px) {
   .wrapper {
-    display: grid;
-    grid-template-columns: 1fr 2fr;
+    display: flex;
+    flex-direction: row;
   }
 
   .footer {
     width: 50%;
     margin-bottom: 30px;
     text-align: center;
-  }
-
-  .footer h4::before {
-    all: unset;
   }
 }
 
