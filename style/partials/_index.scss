@@ -1,12 +1,38 @@
-body{
-    background: url("../img/topImage-1.jpg") no-repeat;
-    background-size: cover;	
-}
+.index{
+    height: 100vh;
+    background: url("/img/topImage-1.jpg") no-repeat center;
+    background-size: cover;
+    font-family: $font-1;
 
-main {
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
+    main {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        position: relative;
+        top: 5vh;
+
+        h2{
+            font-family: $font-2;
+        }
+
+        p{
+            width: 70%;
+            text-align: center;
+        }
+
+        button {
+            @include buttonHover;
+            @include button;
+            margin: 20px;
+        }
+    }
+
+    .footer{
+        position: absolute;
+        left: 0;
+        bottom: 0;
+    }
+
 }
