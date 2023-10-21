@@ -35,3 +35,13 @@ $xl: 4rem;
   border: solid 2px $c-6;
   transition-duration: 300ms;
 }
+
+@mixin button{
+  padding: $s;
+  background-color: $c-3;
+  color: white;
+  border: none;
+  min-width: 80px;
+  border-radius: 110px;
+  border: solid 2px transparent;
+}

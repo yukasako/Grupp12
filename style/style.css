@@ -10,8 +10,9 @@ så att det inte pårverka omoss? Tack! /Yuka)
 */
 .index {
   height: 100vh;
-  background: url("/img/topImage-1.jpg") no-repeat;
+  background: url("/img/topImage-1.jpg") no-repeat center;
   background-size: cover;
+  font-family: serif;
 }
 .index main {
   width: 100%;
@@ -19,6 +20,28 @@ så att det inte pårverka omoss? Tack! /Yuka)
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  position: relative;
+  top: 5vh;
+}
+.index main h2 {
+  font-family: arial;
+}
+.index main p {
+  width: 70%;
+  text-align: center;
+}
+.index main button {
+  cursor: pointer;
+  border: solid 2px orange;
+  transition-duration: 300ms;
+  padding: 0.5rem;
+  background-color: #426a5a;
+  color: white;
+  border: none;
+  min-width: 80px;
+  border-radius: 110px;
+  border: solid 2px transparent;
+  margin: 20px;
 }
 .index .footer {
   position: absolute;
@@ -27,6 +50,11 @@ så att det inte pårverka omoss? Tack! /Yuka)
 }
 
 .kontakt {
+  background-color: white;
+  color: black;
+  line-height: 2;
+  padding: 1em;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
   /* .form label {
       display: inline-block;
       width: 100px;
@@ -57,13 +85,6 @@ så att det inte pårverka omoss? Tack! /Yuka)
 .kontakt .header h3 {
   font-size: 40px;
   font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
-}
-.kontakt body {
-  background-color: white;
-  color: black;
-  line-height: 2;
-  padding: 1em;
-  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
 }
 .kontakt .wrapper {
   padding: 1em;
@@ -326,6 +347,7 @@ så att det inte pårverka omoss? Tack! /Yuka)
 
 footer {
   width: 100%;
+  height: 5vh;
   background-color: #f4d1ae;
   position: relative;
   bottom: 0;
