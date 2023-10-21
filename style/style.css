@@ -182,6 +182,10 @@ nav {
   margin: 0.5rem;
 }
 
+.display {
+  display: none !important;
+}
+
 /*Om oss*/
 .omoss .hero {
   width: 80%;
