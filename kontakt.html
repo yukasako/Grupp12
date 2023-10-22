@@ -1,374 +1,109 @@
-@charset "UTF-8";
-.index {
-  height: 100vh;
-  background: url("/img/topImage-1.jpg") no-repeat center;
-  background-size: cover;
-  font-family: serif;
-}
-.index main {
-  width: 100%;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  position: relative;
-  top: 5vh;
-}
-.index main h2 {
-  font-family: arial;
-}
-.index main p {
-  width: 70%;
-  text-align: center;
-}
-.index main button {
-  cursor: pointer;
-  border: solid 2px orange;
-  transition-duration: 300ms;
-  padding: 0.5rem;
-  background-color: #426a5a;
-  color: white;
-  border: none;
-  min-width: 80px;
-  border-radius: 110px;
-  border: solid 2px transparent;
-  margin: 20px;
-}
-.index .footer {
-  position: absolute;
-  left: 0;
-  bottom: 0;
-}
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Kontakt</title>
+    <link rel="stylesheet" href="style/style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css"
+    />
+  </head>
+  <body class="kontakt">
+    <!-- <div class="login">  -->
+    <!-- <a href="#">Home</a>
+            <a href="#">About Us</a>
+            <a href="#">Products</a>
+            <a href="#">Contact</a>
+          </div>  -->
+    <!-- </nav>  -->
+    <!-- <header>
+      <nav>
+        <div id="navbar">
+          <img src="" alt="logo" />
+          <button id="hamburger"></button>
+        </div>
+        <div id="navbar-links">
+          <a href="#">Home</a>
+          <a href="#">About Us</a>
+          <a href="#">Products</a>
+          <a href="#">Contact</a>
+        </div>
+      </nav>
+    </header> -->
+    <div class="container">
+      <!-- <div class="header">
+        <img src="/img/logo.png" alt="" />
+        <h3>Petpals</h3>
+      </div> -->
 
-.kontakt {
-  background-color: white;
-  color: black;
-  line-height: 2;
-  padding: 1em;
-  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
-  /* .form label {
-      display: inline-block;
-      width: 100px;
+      <div class="wrapper">
+        <div class="image">
+          <img src="/img/building.png" alt="" />
+        </div>
 
-  } */
-  /* .form input {
-      display: inline-block;
-      width: 200px;
-      margin-right: 10px;
-  } */
-  /* DESKTOP*/
-}
-.kontakt * {
-  box-sizing: border-box;
-}
-.kontakt .header {
-  background-color: rgb(244, 239, 239);
-  display: flex;
-  align-items: center;
-  padding: 10px;
-  height: 100px;
-  width: 100%;
-}
-.kontakt .header img {
-  width: 30px;
-  height: 30px;
-}
-.kontakt .header h3 {
-  font-size: 40px;
-  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
-}
-.kontakt .wrapper {
-  padding: 1em;
-}
-.kontakt .container {
-  max-width: 1170px;
-  margin-left: auto;
-  margin-right: auto;
-  padding: 1em;
-  text-align: center;
-}
-.kontakt img {
-  width: 400px;
-  height: 200px;
-}
-.kontakt h1,
-.kontakt .image {
-  text-align: center;
-  margin: 10px;
-}
-.kontakt .form {
-  display: block;
-  background: lightgray;
-  padding: 20px 20px;
-  text-align: justify;
-}
-.kontakt .form label {
-  display: block;
-  justify-content: center;
-}
-.kontakt .form p {
-  margin: 0;
-}
-.kontakt .form p.full {
-  grid-column: 1/3;
-}
-.kontakt .container button {
-  width: 150px;
-  height: 40px;
-  background: #426a5a;
-  border-radius: 5px;
-  color: white;
-  border: 0;
-  text-transform: uppercase;
-  cursor: pointer;
-}
-.kontakt button:hover {
-  background: rgb(143, 146, 145);
-}
-.kontakt footer {
-  width: 100%;
-  justify-items: center;
-}
-.kontakt .navbar {
-  color: black;
-  padding: 10px;
-  text-align: center;
-  justify-content: center;
-}
-.kontakt .navbar a {
-  text-decoration: none;
-  color: black;
-  /* Змініть колір тексту посилань за вашим вибором */
-  margin: 10px;
-}
-@media (min-width: 700px) {
-  .kontakt .wrapper {
-    display: grid;
-    grid-template-columns: 1fr 2fr;
-  }
-  .kontakt .footer {
-    width: 50%;
-    margin-bottom: 30px;
-    text-align: center;
-  }
-  .kontakt .footer h4::before {
-    all: unset;
-  }
-}
-@media (max-width: 555px) {
-  .kontakt .footer {
-    width: 100%;
-  }
-}
+        <div class="form">
+          <h1>Contact us</h1>
 
-nav {
-  position: fixed;
-  top: 0;
-  width: 100%;
-  background-color: white;
-}
+          <p>
+            <label for="">Name</label>
+            <input type="text" name="name" />
+          </p>
+          <p>
+            <label for="">Email </label>
+            <input type="email" name="email" />
+          </p>
+          <p>
+            <label for="">Phone number</label>
+            <input type="number" name="number" />
+          </p>
+          <p>
+            <label for="owner"
+              ><input
+                id="owner"
+                type="radio"
+                name="account-type"
+                class="inline"
+              />
+              pet owner</label
+            >
+            <label for="renter"
+              ><input
+                id="renter"
+                type="radio"
+                name="account-type"
+                class="inline"
+              />
+              caretaker</label
+            >
+          </p>
+          <label for="topic">
+            <p>Topic of your mail</p>
+            <select id="topic" name="topic">
+              <option value="">(select one)</option>
+              <option value="1">Pet owner registration</option>
+              <option value="2">Pet availability</option>
+              <option value="3">Feedback and suggestions</option>
+              <option value="4">Other</option>
+            </select>
+          </label>
+          <p class="full">
+            <label for=""></label>
+            <textarea
+              id="bio"
+              name="message"
+              rows="5"
+              placeholder="Write the text..."
+            ></textarea>
+          </p>
+          <p>
+            <button>Submit</button>
+          </p>
+        </div>
+      </div>
+    </div>
 
-#navbar-links {
-  position: fixed;
-  width: 100vw;
-  height: 100vh;
-  background-color: white;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-}
-#navbar-links a {
-  margin: 0.5rem;
-}
-
-.display {
-  display: none !important;
-}
-
-/*Om oss*/
-.omoss .hero {
-  width: 80%;
-}
-.omoss main {
-  width: 100%;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-}
-.omoss h2 {
-  text-align: center;
-}
-.omoss .timeline {
-  width: 80%;
-  max-width: 940px;
-  margin: 28px auto;
-}
-.omoss .timeline-list {
-  padding: 40px 0;
-}
-.omoss .timeline-list-item {
-  display: flex;
-  line-height: 1.5;
-  font-size: 16px;
-}
-.omoss .timeline-list-item .date {
-  width: 20%;
-  padding: 0 0 0 20px;
-  color: #888888;
-  font-weight: bold;
-}
-.omoss .timeline-list-item .content {
-  position: relative;
-  width: 80%;
-  padding: 0 20px 60px 30px;
-  border-left: 1px solid #aaaaaa;
-}
-.omoss .timeline-list-item .content::before {
-  content: "";
-  position: absolute;
-  top: 0;
-  left: -10px;
-  width: 10px;
-  height: 10px;
-  background-color: #426a5a;
-  border-radius: 10px;
-}
-.omoss .container {
-  width: 80%;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  gap: 5vh;
-}
-.omoss .container .member {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-}
-.omoss .container .member .TitleEmail {
-  display: flex;
-  justify-content: space-between;
-  color: #888888;
-}
-.omoss .container .member .portrait {
-  width: 40vh;
-  height: 40vh;
-  border-radius: 50%;
-}
-
-#produkterBODY {
-  box-sizing: border-box;
-  padding: 0;
-  margin: 0;
-}
-#produkterBODY main {
-  padding-left: 1rem;
-  padding-right: 1rem;
-}
-#produkterBODY #produkter {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-}
-#produkterBODY #produkter img {
-  width: 100%;
-}
-#produkterBODY #produkter h1 {
-  text-align: center;
-  margin-bottom: 0.5rem;
-}
-#produkterBODY #produkter .container {
-  width: 100%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-#produkterBODY #produkter .container .productCard {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  padding: 1rem;
-  margin-bottom: 2rem;
-}
-#produkterBODY #produkter .container .productCard h2 {
-  margin-bottom: 0.2rem;
-}
-#produkterBODY #produkter .container .productCard p {
-  text-align: center;
-  margin-bottom: 1rem;
-}
-#produkterBODY #produkter .container .productCard button {
-  padding: 0.5rem;
-  background-color: #426a5a;
-  color: white;
-  border: none;
-  min-width: 80px;
-  border-radius: 110px;
-  border: solid 2px transparent;
-}
-#produkterBODY #produkter .container .productCard button:hover {
-  cursor: pointer;
-  border: solid 2px orange;
-  transition-duration: 300ms;
-}
-
-#referenserBODY {
-  box-sizing: border-box;
-  padding: 0;
-  margin: 0;
-}
-#referenserBODY #referenser {
-  margin-top: 2rem;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-}
-#referenserBODY #referenser .reviewCard {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  width: 200px;
-  height: 400px;
-  margin-bottom: 4rem;
-}
-#referenserBODY #referenser .reviewCard img {
-  border-radius: 50%;
-  width: 150px;
-  height: 150px;
-}
-#referenserBODY #referenser .reviewCard h1 {
-  font-size: 2rem;
-  margin-bottom: 0.5rem;
-  margin-top: 1rem;
-}
-#referenserBODY #referenser .reviewCard .container {
-  background-color: #db5c5c;
-  border-radius: 0.5rem;
-}
-#referenserBODY #referenser .reviewCard .container .container {
-  display: flex;
-  justify-content: space-between;
-  padding: 1rem;
-  padding-bottom: 0;
-}
-#referenserBODY #referenser .reviewCard .container .container svg {
-  color: yellow;
-}
-#referenserBODY #referenser .reviewCard .container p {
-  padding: 0 1rem;
-  text-align: center;
-}
-
-footer {
-  width: 100%;
-  height: 5vh;
-  background-color: #f4d1ae;
-  position: relative;
-  bottom: 0;
-}/*# sourceMappingURL=style.css.map */
+    <footer></footer>
+  </body>
+</html>
