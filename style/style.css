@@ -340,6 +340,7 @@ nav {
   width: 200px;
   height: 400px;
   margin-bottom: 4rem;
+  margin-top: 2rem;
 }
 #referenserBODY #referenser .reviewCard img {
   border-radius: 50%;
@@ -367,6 +368,16 @@ nav {
 #referenserBODY #referenser .reviewCard .container p {
   padding: 0 1rem;
   text-align: center;
+  height: 100px;
+}
+@media (min-width: 768px) {
+  #referenserBODY #referenser {
+    flex-direction: row;
+    align-items: center;
+  }
+  #referenserBODY #referenser .reviewCard {
+    margin: 2rem;
+  }
 }
 
 footer {
