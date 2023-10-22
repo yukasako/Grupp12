@@ -108,19 +108,22 @@ button:hover {
     background: rgb(143, 146, 145);
 }
 
-.address {
-    display: flex;
-    align-items: center;
 
-}
 
 .footer-container {
     display: flex;
+
     justify-content: space-between;
     align-items: center;
     max-width: 1170px;
     margin: 0 auto;
     background-color: white;
+
+}
+
+.address {
+    display: flex;
+    align-items: center;
 
 }
 
@@ -156,6 +159,7 @@ button:hover {
     margin: 0 10px;
     font-size: 20px;
     display: inline;
+
 }
 
 .footer-social a {
@@ -164,6 +168,7 @@ button:hover {
     font-size: 30px;
     margin: 10px;
     display: inline;
+
 }
 
 

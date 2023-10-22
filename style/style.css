@@ -1,3 +1,142 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  background-color: white;
+  color: black;
+  line-height: 2;
+  padding: 1em;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+}
+
+.wrapper {
+  padding: 1em;
+  display: flex;
+  flex-direction: column;
+}
+
+.container {
+  max-width: 1170px;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 1em;
+  text-align: center;
+}
+
+img {
+  width: 400px;
+  height: 200px;
+  margin: 20px;
+}
+
+h1 {
+  text-align: center;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  font-weight: 150;
+}
+
+.form {
+  display: block;
+  background: lightgray;
+  padding: 20px 20px;
+  text-align: justify;
+  font-size: 19px;
+  border-radius: 5px;
+}
+.form p {
+  margin: auto;
+}
+.form .contacts label {
+  display: inline-block;
+  width: 100px;
+}
+.form .contacts input {
+  display: inline-block;
+  width: 200px;
+  height: 30px;
+  margin: 20px;
+  border-radius: 5px;
+}
+.form .account-type {
+  display: flex;
+  font-size: 18px;
+}
+.form .account-type input {
+  height: 10px;
+  width: 20px;
+}
+.form textarea {
+  border-radius: 5px;
+}
+.form .container button {
+  width: 150px;
+  height: 40px;
+  background: #426a5a;
+  border-radius: 5px;
+  color: white;
+  border: 0;
+  text-transform: uppercase;
+  cursor: pointer;
+}
+.form .container button:hover {
+  background: rgb(143, 146, 145);
+}
+
+.address {
+  display: flex;
+  align-items: center;
+}
+
+.footer-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 1170px;
+  margin: 0 auto;
+  background-color: white;
+}
+.footer-container .address-item {
+  display: flex;
+  align-items: center;
+  margin-right: 10px;
+}
+.footer-container .address-item img {
+  margin-right: 5px;
+  width: 20px;
+  height: 20px;
+}
+
+.line {
+  border: 1px solid #ccc;
+}
+
+.footer-links a,
+.footer-social a {
+  text-decoration: none;
+  color: black;
+  font-size: 30px;
+  margin: 0 10px;
+  display: inline;
+}
+
+/* DESKTOP */
+@media (min-width: 1080px) {
+  .wrapper {
+    display: flex;
+    flex-direction: row;
+  }
+  .footer {
+    width: 50%;
+    margin-bottom: 30px;
+    text-align: center;
+  }
+}
+@media (max-width: 555px) {
+  .footer {
+    width: 100%;
+  }
+}
 /*Om oss*/
 .hero {
   width: 80vh;
