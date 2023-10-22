@@ -186,6 +186,10 @@ nav {
   display: none !important;
 }
 
+.scrollLock {
+  overflow: hidden;
+}
+
 /*Om oss*/
 .omoss .hero {
   width: 80%;
