@@ -16,6 +16,7 @@
       width: 200px;
       height: 400px;
       margin-bottom: $xl;
+      margin-top: $l;
 
       img {
         border-radius: 50%;
@@ -42,7 +43,19 @@
         }
         p {
           padding: 0 $m;
+          text-align: center;
+          height: 100px;
         }
+      }
+    }
+  }
+  @media (min-width: 768px) {
+    #referenser {
+      flex-direction: row;
+      align-items: center;
+
+      .reviewCard {
+        margin: $l;
       }
     }
   }

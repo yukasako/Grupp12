@@ -177,6 +177,7 @@ nav {
   flex-direction: column;
   align-items: center;
   justify-content: center;
+  animation: slide-in-top 0.8s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
 }
 #navbar-links a {
   margin: 0.5rem;
@@ -186,6 +187,19 @@ nav {
   display: none !important;
 }
 
+.scrollLock {
+  overflow: hidden;
+}
+@keyframes slide-in-top {
+  0% {
+    transform: translateY(-1000px);
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
 /*Om oss*/
 .omoss .hero {
   width: 80%;
@@ -285,6 +299,7 @@ nav {
   padding-right: 1rem;
 }
 #produkterBODY #produkter {
+  margin-top: 2rem;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -292,10 +307,12 @@ nav {
 }
 #produkterBODY #produkter img {
   width: 100%;
+  max-width: 750px;
 }
 #produkterBODY #produkter h1 {
   text-align: center;
   margin-bottom: 0.5rem;
+  font-size: 2rem;
 }
 #produkterBODY #produkter .container {
   width: 100%;
@@ -309,6 +326,7 @@ nav {
   align-items: center;
   justify-content: center;
   padding: 1rem;
+  max-width: 250px;
   margin-bottom: 2rem;
 }
 #produkterBODY #produkter .container .productCard h2 {
@@ -352,6 +370,7 @@ nav {
   width: 200px;
   height: 400px;
   margin-bottom: 4rem;
+  margin-top: 2rem;
 }
 #referenserBODY #referenser .reviewCard img {
   border-radius: 50%;
@@ -378,6 +397,17 @@ nav {
 }
 #referenserBODY #referenser .reviewCard .container p {
   padding: 0 1rem;
+  text-align: center;
+  height: 100px;
+}
+@media (min-width: 768px) {
+  #referenserBODY #referenser {
+    flex-direction: row;
+    align-items: center;
+  }
+  #referenserBODY #referenser .reviewCard {
+    margin: 2rem;
+  }
 }
 
 footer {
