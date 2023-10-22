@@ -1,8 +1,8 @@
-#navbar-links {
-  display: none;
-}
-
 #referenserBODY {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+
   #referenser {
     margin-top: $l;
     display: flex;
@@ -21,11 +21,11 @@
         border-radius: 50%;
         width: 150px;
         height: 150px;
-        margin-bottom: $s;
       }
       h1 {
         font-size: $l;
-        margin-bottom: $m;
+        margin-bottom: $s;
+        margin-top: $m;
       }
       .container {
         background-color: $c-5;
@@ -34,14 +34,15 @@
           display: flex;
           justify-content: space-between;
           padding: $m;
+          padding-bottom: 0;
 
           svg {
             color: yellow;
           }
         }
         p {
-          padding: $m;
-          padding-top: 0;
+          padding: 0 $m;
+          text-align: center;
         }
       }
     }

@@ -1,9 +1,3 @@
-* {
-  box-sizing: border-box;
-  padding: 0;
-  margin: 0;
-}
-
 $c-1: white;
 $c-2: black;
 $c-3: #426a5a;
@@ -29,4 +23,14 @@ $xl: 4rem;
   cursor: pointer;
   border: solid 2px $c-6;
   transition-duration: 300ms;
+}
+
+@mixin button {
+  padding: $s;
+  background-color: $c-3;
+  color: white;
+  border: none;
+  min-width: 80px;
+  border-radius: 110px;
+  border: solid 2px transparent;
 }
