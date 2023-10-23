@@ -3,6 +3,27 @@ nav {
   top: 0;
   width: 100%;
   background-color: $c-1;
+
+  #navbar {
+    height: 2rem;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    padding: $s;
+
+    img {
+      max-height: 100%;
+    }
+
+    button {
+      height: 100%;
+      width: 30px;
+      background-color: white;
+      border: solid 1px black;
+      border-radius: 5px;
+    }
+  }
 }
 
 #navbar-links {
@@ -52,5 +73,34 @@ nav {
     -webkit-transform: translateY(0);
     transform: translateY(0);
     opacity: 1;
+  }
+}
+
+@media (min-width: 768px) {
+  #navbar {
+    display: flex;
+    flex-direction: row;
+    button {
+      display: none;
+    }
+  }
+
+  #navbar-links {
+    position: fixed;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    top: 0.2rem;
+    width: 30rem;
+    right: 1rem;
+    text-align: right;
+    padding: $s;
+    height: 2rem;
+    background-color: white;
+    display: inline-block;
+    -webkit-animation: slide-in-top 0.8s cubic-bezier(0.25, 0.46, 0.45, 0.94)
+      both;
+    animation: slide-in-top 0.8s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
   }
 }
