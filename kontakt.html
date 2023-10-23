@@ -4,14 +4,21 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Kontakt</title>
-    <link rel="stylesheet" href="kontakt.css" />
+    <link rel="stylesheet" href="style/style.css" />
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css"
     />
   </head>
-  <body>
-    <header>
+  <body class="kontakt">
+    <!-- <div class="login">  -->
+    <!-- <a href="#">Home</a>
+            <a href="#">About Us</a>
+            <a href="#">Products</a>
+            <a href="#">Contact</a>
+          </div>  -->
+    <!-- </nav>  -->
+    <!-- <header>
       <nav>
         <div id="navbar">
           <img src="" alt="logo" />
@@ -24,9 +31,13 @@
           <a href="#">Contact</a>
         </div>
       </nav>
-    </header>
-
+    </header> -->
     <div class="container">
+      <!-- <div class="header">
+        <img src="/img/logo.png" alt="" />
+        <h3>Petpals</h3>
+      </div> -->
+
       <div class="wrapper">
         <div class="image">
           <img src="/img/building.png" alt="" />
@@ -35,56 +46,50 @@
         <div class="form">
           <h1>Contact us</h1>
 
-          <div class="contacts">
-            <p>
-              <label for="">Name</label>
-              <input type="text" name="name" />
-            </p>
-            <p>
-              <label for="">Email </label>
-              <input type="email" name="email" />
-            </p>
-            <p>
-              <label for="">Phone number</label>
-              <input type="number" name="number" />
-            </p>
-          </div>
-          <div class="account-type">
-            <label for="account-type">Account Type</label>
-            <div class="radio-options">
-              <label for="owner">
-                <input
-                  id="owner"
-                  type="radio"
-                  name="account-type"
-                  class="inline"
-                />
-                Pet Owner
-              </label>
-              <label for="renter">
-                <input
-                  id="renter"
-                  type="radio"
-                  name="account-type"
-                  class="inline"
-                />
-                Caretaker
-              </label>
-            </div>
-          </div>
-
           <p>
-            <label for="topic">Topic of your mail</label>
+            <label for="">Name</label>
+            <input type="text" name="name" />
           </p>
-          <select id="topic" name="topic">
-            <option value="">(select one)</option>
-            <option value="1">Pet Owner Registration</option>
-            <option value="2">Pet Availability</option>
-            <option value="3">Feedback and Suggestions</option>
-            <option value="4">Other</option>
-          </select>
-
           <p>
+            <label for="">Email </label>
+            <input type="email" name="email" />
+          </p>
+          <p>
+            <label for="">Phone number</label>
+            <input type="number" name="number" />
+          </p>
+          <p>
+            <label for="owner"
+              ><input
+                id="owner"
+                type="radio"
+                name="account-type"
+                class="inline"
+              />
+              pet owner</label
+            >
+            <label for="renter"
+              ><input
+                id="renter"
+                type="radio"
+                name="account-type"
+                class="inline"
+              />
+              caretaker</label
+            >
+          </p>
+          <label for="topic">
+            <p>Topic of your mail</p>
+            <select id="topic" name="topic">
+              <option value="">(select one)</option>
+              <option value="1">Pet owner registration</option>
+              <option value="2">Pet availability</option>
+              <option value="3">Feedback and suggestions</option>
+              <option value="4">Other</option>
+            </select>
+          </label>
+          <p class="full">
+            <label for=""></label>
             <textarea
               id="bio"
               name="message"

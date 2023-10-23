@@ -1,0 +1,62 @@
+#referenserBODY {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+
+  #referenser {
+    margin-top: $l;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    .reviewCard {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      width: 200px;
+      height: 400px;
+      margin-bottom: $xl;
+      margin-top: $l;
+
+      img {
+        border-radius: 50%;
+        width: 150px;
+        height: 150px;
+      }
+      h1 {
+        font-size: $l;
+        margin-bottom: $s;
+        margin-top: $m;
+      }
+      .container {
+        background-color: $c-5;
+        border-radius: $s;
+        .container {
+          display: flex;
+          justify-content: space-between;
+          padding: $m;
+          padding-bottom: 0;
+
+          svg {
+            color: yellow;
+          }
+        }
+        p {
+          padding: 0 $m;
+          text-align: center;
+          height: 100px;
+        }
+      }
+    }
+  }
+  @media (min-width: 768px) {
+    #referenser {
+      flex-direction: row;
+      align-items: center;
+
+      .reviewCard {
+        margin: $l;
+      }
+    }
+  }
+}

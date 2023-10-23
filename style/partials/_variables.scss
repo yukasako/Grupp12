@@ -1,4 +1,4 @@
-$c-1: rgb(126, 207, 50);
+$c-1: white;
 $c-2: black;
 $c-3: #426a5a;
 $c-4: #f4d1ae;
@@ -14,7 +14,23 @@ $m: 1rem;
 $l: 2rem;
 $xl: 4rem;
 
-@mixin mobile() {
-  @media (max-width: 1080px) {
+@mixin desktop() {
+  @media (min-width: 1024px){
   }
+}
+
+@mixin buttonHover() {
+  cursor: pointer;
+  border: solid 2px $c-6;
+  transition-duration: 300ms;
+}
+
+@mixin button {
+  padding: $s;
+  background-color: $c-3;
+  color: white;
+  border: none;
+  min-width: 80px;
+  border-radius: 110px;
+  border: solid 2px transparent;
 }
