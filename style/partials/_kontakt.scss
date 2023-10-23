@@ -1,16 +1,14 @@
 .kontakt {
   box-sizing: border-box;
-
-  body {
-    width: 100%;
-    color: black;
-    line-height: 2;
-    font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS",
-      sans-serif;
-  }
-
+  line-height: 2;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  
   .wrapper {
-    width: 100%;
+    width: 80%;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -94,7 +92,7 @@
     }
 
     .footer {
-      width: 50%;
+      width: 100%;
       margin-bottom: 30px;
       text-align: center;
     }
