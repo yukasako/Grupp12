@@ -1,7 +1,7 @@
 $c-1: white;
 $c-2: black;
 $c-3: #426a5a;
-$c-4: #f4d1ae;
+$c-4: #F2EFC7;
 $c-5: #db5c5c;
 $c-6: orange;
 
@@ -14,8 +14,8 @@ $m: 1rem;
 $l: 2rem;
 $xl: 4rem;
 
-@mixin mobile() {
-  @media (max-width: 1080px) {
+@mixin desktop() {
+  @media (min-width: 1024px){
   }
 }
 

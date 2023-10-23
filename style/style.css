@@ -1,189 +1,10 @@
+
 @charset "UTF-8";
-.index {
-  height: 100vh;
-  background: url("/img/topImage-1.jpg") no-repeat center;
-  background-size: cover;
-  font-family: serif;
-}
-.index main {
-  width: 100%;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  position: relative;
-  top: 5vh;
-}
-.index main h2 {
-  font-family: arial;
-}
-.index main p {
-  width: 70%;
-  text-align: center;
-}
-.index main button {
-  cursor: pointer;
-  border: solid 2px orange;
-  transition-duration: 300ms;
-  padding: 0.5rem;
-  background-color: #426a5a;
-  color: white;
-  border: none;
-  min-width: 80px;
-  border-radius: 110px;
-  border: solid 2px transparent;
-  margin: 20px;
-}
-.index .footer {
-  position: absolute;
-  left: 0;
-  bottom: 0;
-}
-
-.kontakt {
-  background-color: white;
-  color: black;
-  line-height: 2;
-  padding: 1em;
-  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
-  /* .form label {
-      display: inline-block;
-      width: 100px;
-
-  } */
-  /* .form input {
-      display: inline-block;
-      width: 200px;
-      margin-right: 10px;
-  } */
-  /* DESKTOP*/
-}
-.kontakt * {
-  box-sizing: border-box;
-}
-.kontakt .header {
-  background-color: rgb(244, 239, 239);
-  display: flex;
-  align-items: center;
-  padding: 10px;
-  height: 100px;
-  width: 100%;
-}
-.kontakt .header img {
-  width: 30px;
-  height: 30px;
-}
-.kontakt .header h3 {
-  font-size: 40px;
-  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
-}
-.kontakt .wrapper {
-  padding: 1em;
-}
-.kontakt .container {
-  max-width: 1170px;
-  margin-left: auto;
-  margin-right: auto;
-  padding: 1em;
-  text-align: center;
-}
-.kontakt img {
-  width: 400px;
-  height: 200px;
-}
-.kontakt h1,
-.kontakt .image {
-  text-align: center;
-  margin: 10px;
-}
-.kontakt .form {
-  display: block;
-  background: lightgray;
-  padding: 20px 20px;
-  text-align: justify;
-}
-.kontakt .form label {
-  display: block;
-  justify-content: center;
-}
-.kontakt .form p {
-  margin: 0;
-}
-.kontakt .form p.full {
-  grid-column: 1/3;
-}
-.kontakt .container button {
-  width: 150px;
-  height: 40px;
-  background: #426a5a;
-  border-radius: 5px;
-  color: white;
-  border: 0;
-  text-transform: uppercase;
-  cursor: pointer;
-}
-.kontakt button:hover {
-  background: rgb(143, 146, 145);
-}
-.kontakt footer {
-  width: 100%;
-  justify-items: center;
-}
-.kontakt .navbar {
-  color: black;
-  padding: 10px;
-  text-align: center;
-  justify-content: center;
-}
-.kontakt .navbar a {
-  text-decoration: none;
-  color: black;
-  /* Змініть колір тексту посилань за вашим вибором */
-  margin: 10px;
-}
-@media (min-width: 700px) {
-  .kontakt .wrapper {
-    display: grid;
-    grid-template-columns: 1fr 2fr;
-  }
-  .kontakt .footer {
-    width: 50%;
-    margin-bottom: 30px;
-    text-align: center;
-  }
-  .kontakt .footer h4::before {
-    all: unset;
-  }
-}
-@media (max-width: 555px) {
-  .kontakt .footer {
-    width: 100%;
-  }
-}
-
 nav {
   position: fixed;
   top: 0;
   width: 100%;
   background-color: white;
-}
-nav #navbar {
-  height: 2rem;
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  justify-content: space-between;
-  padding: 0.5rem;
-}
-nav #navbar img {
-  max-height: 100%;
-}
-nav #navbar button {
-  height: 100%;
-  width: 30px;
-  background-color: white;
-  border: solid 1px black;
-  border-radius: 5px;
 }
 
 #navbar-links {
@@ -218,31 +39,260 @@ nav #navbar button {
     opacity: 1;
   }
 }
-@media (min-width: 768px) {
-  #navbar {
-    display: flex;
-    flex-direction: row;
+footer {
+  width: 100%;
+  height: 5vh;
+  background-color: #F2EFC7;
+  position: relative;
+  bottom: 0;
+}
+
+nav {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  background-color: white;
+}
+
+#navbar-links {
+  position: fixed;
+  width: 100vw;
+  height: 100vh;
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  animation: slide-in-top 0.8s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
+}
+#navbar-links a {
+  margin: 0.5rem;
+}
+
+.display {
+  display: none !important;
+}
+
+.scrollLock {
+  overflow: hidden;
+}
+@keyframes slide-in-top {
+  0% {
+    transform: translateY(-1000px);
+    opacity: 0;
   }
-  #navbar button {
-    display: none;
-  }
-  #navbar-links {
-    position: fixed;
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: center;
-    top: 0.2rem;
-    width: 30rem;
-    right: 1rem;
-    text-align: right;
-    padding: 0.5rem;
-    height: 2rem;
-    background-color: white;
-    display: inline-block;
-    animation: slide-in-top 0.8s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
+  100% {
+    transform: translateY(0);
+    opacity: 1;
   }
 }
+footer {
+  width: 100%;
+  height: 5vh;
+  background-color: #F2EFC7;
+  position: relative;
+  bottom: 0;
+}
+
+.index {
+  height: 100vh;
+  background: url("/img/topImage-1.jpg") no-repeat center;
+  background-size: cover;
+  font-family: serif;
+}
+.index main {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+  top: 8vh;
+}
+.index main h2 {
+  font-family: arial;
+  font-size: 2rem;
+  margin: 0;
+}
+.index main p {
+  width: 70%;
+  font-family: serif;
+  text-align: center;
+  font-size: 1rem;
+}
+.index main .CTA {
+  padding: 0.5rem;
+  background-color: #426a5a;
+  color: white;
+  min-width: 150px;
+  border-radius: 110px;
+  border: solid 2px transparent;
+  margin: 20px;
+  font-family: arial;
+  font-size: 1rem;
+}
+.index main button:hover {
+  cursor: pointer;
+  border: solid 2px orange;
+  transition-duration: 300ms;
+}
+.index .footer {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+}
+@media (min-width: 1024px) {
+  .index main {
+    position: relative;
+    top: 5vh;
+  }
+  .index main h2 {
+    font-size: 3rem;
+  }
+  .index main p {
+    font-size: 1.4rem;
+  }
+  .index main .CTA {
+    width: 200px;
+    height: 50px;
+    font-size: 1.2rem;
+  }
+}
+
+.kontakt {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 20px;
+  /* DESKTOP*/
+}
+.kontakt body {
+  background-color: white;
+  color: black;
+  line-height: 2;
+  padding: 1em;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+}
+.kontakt .wrapper {
+  padding: 1em;
+  display: flex;
+  flex-direction: column;
+}
+.kontakt .container {
+  max-width: 1170px;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 1em;
+  text-align: center;
+}
+.kontakt .container img {
+  width: 400px;
+  height: 200px;
+  margin: 20px;
+}
+.kontakt .container h1 {
+  text-align: center;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  font-weight: 150;
+}
+.kontakt .container .form {
+  display: block;
+  background: lightgray;
+  padding: 20px 20px;
+  text-align: justify;
+  font-size: 19px;
+  border-radius: 5px;
+  margin: 10px;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+}
+.kontakt .container .form .contacts label {
+  display: inline-block;
+  width: 100px;
+}
+.kontakt .container .form .contacts input {
+  display: inline-block;
+  width: 200px;
+  height: 30px;
+  margin: 20px;
+  border-radius: 5px;
+}
+.kontakt .container .form .account-type {
+  display: flex;
+  font-size: 18px;
+  margin: 10px;
+}
+.kontakt .container .form .account-type input {
+  height: 10px;
+  width: 20px;
+}
+.kontakt .container textarea {
+  border-radius: 5px;
+}
+.kontakt .container button {
+  width: 150px;
+  height: 40px;
+  background: #426a5a;
+  border-radius: 5px;
+  color: white;
+  border: 0;
+  text-transform: uppercase;
+  cursor: pointer;
+}
+.kontakt .container button:hover {
+  background: rgb(143, 146, 145);
+}
+.kontakt .address {
+  display: flex;
+  align-items: center;
+  display: flex;
+  align-items: center;
+  margin-right: 20px;
+}
+.kontakt .address img {
+  margin-right: 10px;
+  width: 20px;
+  height: 20px;
+}
+.kontakt .line {
+  border: 1px solid #ccc;
+}
+.kontakt .footer-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 1170px;
+  margin: 0 auto;
+  background-color: white;
+}
+.kontakt .footer-links a {
+  text-decoration: none;
+  color: black;
+  margin: 0 10px;
+  font-size: 20px;
+  display: inline;
+}
+.kontakt .footer-social a {
+  text-decoration: none;
+  color: black;
+  font-size: 30px;
+  margin: 10px;
+  display: inline;
+}
+@media (min-width: 1080px) {
+  .kontakt .wrapper {
+    display: flex;
+    flex-direction: row;
+  }
+  .kontakt .footer {
+    width: 50%;
+    margin-bottom: 30px;
+    text-align: center;
+  }
+}
+@media (max-width: 555px) {
+  .kontakt .footer {
+    width: 100%;
+  }
+}
+
 /*Om oss*/
 .omoss .hero {
   width: 80%;
@@ -286,7 +336,7 @@ nav #navbar button {
   content: "";
   position: absolute;
   top: 0;
-  left: -10px;
+  left: -5px;
   width: 10px;
   height: 10px;
   background-color: #426a5a;
@@ -297,13 +347,13 @@ nav #navbar button {
   display: flex;
   flex-direction: column;
   align-items: center;
-  gap: 5vh;
 }
 .omoss .container .member {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  margin: 5vh;
 }
 .omoss .container .member .TitleEmail {
   display: flex;
@@ -314,6 +364,22 @@ nav #navbar button {
   width: 40vh;
   height: 40vh;
   border-radius: 50%;
+}
+@media (min-width: 1024px) {
+  .omoss .members {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+  .omoss .members .member {
+    width: 25%;
+    justify-content: flex-start;
+  }
+  .omoss .members .member .portrait {
+    width: 20vw;
+    height: 20vw;
+    border-radius: 50%;
+  }
 }
 
 #produkterBODY {
@@ -435,12 +501,46 @@ nav #navbar button {
   #referenserBODY #referenser .reviewCard {
     margin: 2rem;
   }
+
+}
+
+.footer-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 1170px;
+  margin: 0 auto;
+  background-color: white;
+}
+.footer-container .address-item {
+  display: flex;
+  align-items: center;
+  margin-right: 10px;
+}
+.footer-container .address-item img {
+  margin-right: 5px;
+  width: 20px;
+  height: 20px;
+}
+
+.line {
+  border: 1px solid #ccc;
+}
+
+.footer-links a,
+.footer-social a {
+  text-decoration: none;
+  color: black;
+  font-size: 30px;
+  margin: 0 10px;
+  display: inline;
 }
 
 footer {
   width: 100%;
   height: 5vh;
-  background-color: #f4d1ae;
+  background-color: white;
   position: relative;
   bottom: 0;
+  
 }/*# sourceMappingURL=style.css.map */

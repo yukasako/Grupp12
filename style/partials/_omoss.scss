@@ -1,4 +1,3 @@
-
 /*Om oss*/
 .omoss {
 
@@ -48,7 +47,7 @@
                         content: "";
                         position: absolute;
                         top: 0;
-                        left: -10px; //widthの半分の値を指定
+                        left: -5px; //widthの半分の値を指定
                         width: 10px;
                         height: 10px;
                         background-color: $c-3;
@@ -64,13 +63,13 @@
         display: flex;
         flex-direction: column;
         align-items: center;
-        gap: 5vh;
 
         .member{
         display: flex;
         flex-direction: column;
         justify-content: center;
         align-items: center;
+        margin: 5vh;
 
             .TitleEmail{
                 display: flex;
@@ -85,5 +84,27 @@
             }
         }
     }
-}
 
+
+    @media (min-width: 1024px){
+        .members {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+
+            .member {
+                width: 25%;
+                justify-content: flex-start;
+
+                .portrait{
+                    width: 20vw;
+                    height: 20vw;
+                    border-radius: 50%;
+                }
+
+            }
+            
+        }
+    }
+
+}
