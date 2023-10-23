@@ -12,87 +12,106 @@
   </head>
   <body class="kontakt">
     <header>
-      <!-- <nav>
+      <nav>
         <div id="navbar">
-          <img src="" alt="logo" />
-          <button id="hamburger"></button>
+          <img src="./img/logo.png" alt="logo" />
+          <svg
+            id="hamburger"
+            xmlns="http://www.w3.org/2000/svg"
+            width="24"
+            height="24"
+            viewBox="0 0 24 24"
+            fill="none"
+            stroke="currentColor"
+            stroke-width="2"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            class="feather feather-align-justify"
+          >
+            <line x1="21" y1="10" x2="3" y2="10"></line>
+            <line x1="21" y1="6" x2="3" y2="6"></line>
+            <line x1="21" y1="14" x2="3" y2="14"></line>
+            <line x1="21" y1="18" x2="3" y2="18"></line>
+          </svg>
         </div>
         <div id="navbar-links" class="display">
-          <a href="#">Home</a>
-          <a href="#">About Us</a>
-          <a href="#">Products</a>
-          <a href="#">Contact</a>
+          <a href="./index.html">Home</a>
+          <a href="./kontakt.html">About Us</a>
+          <a href="./omoss.html">Products</a>
+          <a href="./produkt.html">Reviews</a>
+          <a href="./kontakt.html">Contact</a>
         </div>
-      </nav> -->
+      </nav>
     </header>
 
     <div class="wrapper">
-        <div class="image">
-          <img src="/img/building.png" alt="" />
-        </div>
+      <div class="image">
+        <img src="/img/building.png" alt="" />
+      </div>
 
-        <div class="form">
-          <h1>Contact us</h1>
+      <div class="form">
+        <h1>Contact us</h1>
 
-          <div class="contacts">
-            <p>
-              <label for="">Name</label>
-              <input type="text" name="name" />
-            </p>
-            <p>
-              <label for="">Email </label>
-              <input type="email" name="email" />
-            </p>
-            <p>
-              <label for="">Phone number</label>
-              <input type="number" name="number" />
-            </p>
-          </div>
-          <div class="account-type">
-            <label for="account-type">Account Type</label>
-            <div class="radio-options">
-              <label for="owner">
-                <input
-                  id="owner"
-                  type="radio"
-                  name="account-type"
-                  class="inline"
-                />
-                Pet Owner
-              </label>
-              <label for="renter">
-                <input
-                  id="renter"
-                  type="radio"
-                  name="account-type"
-                  class="inline"
-                />
-                Caretaker
-              </label>
-            </div>
-          </div>
-
+        <div class="contacts">
           <p>
-            <label for="topic">Topic of your mail</label>
+            <label for="">Name</label>
+            <input type="text" name="name" />
           </p>
-          <select class="topic" name="topic">
-            <option value="">(select one)</option>
-            <option value="1">Pet Owner Registration</option>
-            <option value="2">Pet Availability</option>
-            <option value="3">Feedback and Suggestions</option>
-            <option value="4">Other</option>
-          </select>
-
-          <textarea
-            id="bio"
-            name="message"
-            rows="5"
-            placeholder="Write the text...">
-          </textarea>
           <p>
-            <button>Submit</button>
+            <label for="">Email </label>
+            <input type="email" name="email" />
+          </p>
+          <p>
+            <label for="">Phone number</label>
+            <input type="number" name="number" />
           </p>
         </div>
+        <div class="account-type">
+          <label for="account-type">Account Type</label>
+          <div class="radio-options">
+            <label for="owner">
+              <input
+                id="owner"
+                type="radio"
+                name="account-type"
+                class="inline"
+              />
+              Pet Owner
+            </label>
+            <label for="renter">
+              <input
+                id="renter"
+                type="radio"
+                name="account-type"
+                class="inline"
+              />
+              Caretaker
+            </label>
+          </div>
+        </div>
+
+        <p>
+          <label for="topic">Topic of your mail</label>
+        </p>
+        <select class="topic" name="topic">
+          <option value="">(select one)</option>
+          <option value="1">Pet Owner Registration</option>
+          <option value="2">Pet Availability</option>
+          <option value="3">Feedback and Suggestions</option>
+          <option value="4">Other</option>
+        </select>
+
+        <textarea
+          id="bio"
+          name="message"
+          rows="5"
+          placeholder="Write the text..."
+        >
+        </textarea>
+        <p>
+          <button>Submit</button>
+        </p>
+      </div>
     </div>
 
     <footer class="footer">
@@ -108,11 +127,9 @@
       </div>
       <hr class="line" />
 
-
       <div class="footer-container">
-
         <div class="footer-links">
-          <img src="./img/logo.png" alt="Logo">
+          <img src="./img/logo.png" alt="Logo" />
           <a href="#">Home</a>
           <a href="#">About Us</a>
           <a href="#">Products</a>
@@ -127,7 +144,6 @@
           </div>
         </div>
       </div>
-
     </footer>
   </body>
   <script src="./script.js"></script>
