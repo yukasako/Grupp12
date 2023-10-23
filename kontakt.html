@@ -12,7 +12,7 @@
   </head>
   <body class="kontakt">
     <header>
-      <nav>
+      <!-- <nav>
         <div id="navbar">
           <img src="" alt="logo" />
           <button id="hamburger"></button>
@@ -23,11 +23,10 @@
           <a href="#">Products</a>
           <a href="#">Contact</a>
         </div>
-      </nav>
+      </nav> -->
     </header>
 
-    <div class="container">
-      <div class="wrapper">
+    <div class="wrapper">
         <div class="image">
           <img src="/img/building.png" alt="" />
         </div>
@@ -76,7 +75,7 @@
           <p>
             <label for="topic">Topic of your mail</label>
           </p>
-          <select id="topic" name="topic">
+          <select class="topic" name="topic">
             <option value="">(select one)</option>
             <option value="1">Pet Owner Registration</option>
             <option value="2">Pet Availability</option>
@@ -84,22 +83,19 @@
             <option value="4">Other</option>
           </select>
 
-          <p>
-            <textarea
-              id="bio"
-              name="message"
-              rows="5"
-              placeholder="Write the text..."
-            ></textarea>
-          </p>
+          <textarea
+            id="bio"
+            name="message"
+            rows="5"
+            placeholder="Write the text...">
+          </textarea>
           <p>
             <button>Submit</button>
           </p>
         </div>
-      </div>
     </div>
 
-    <footer>
+    <footer class="footer">
       <div class="address">
         <div class="address-item">
           <img src="/img/icon_addres.png" alt="" />
@@ -112,17 +108,21 @@
       </div>
       <hr class="line" />
 
-      <div class="footer-container">
-        <div class="footer-links">
-          <a href="#">Home</a>
-          <a href="#">About Us</a>
-          <a href="#">Products</a>
-          <a href="#">Contact</a>
+      <div>
+        <div class="footer-container">
+          <div class="footer-links">
+            <img src="./img/logo.png" alt="Logo">
+            <a href="#">Home</a>
+            <a href="#">About Us</a>
+            <a href="#">Products</a>
+            <a href="#">Contact</a>
+          </div>
+          <div class="footer-social">
+            <a href="#"><i class="fab fa-instagram"></i></a>
+            <a href="#"><i class="fab fa-facebook-f"></i></a>
+          </div>
         </div>
-        <div class="footer-social">
-          <a href="#"><i class="fab fa-instagram"></i></a>
-          <a href="#"><i class="fab fa-facebook-f"></i></a>
-        </div>
+        <p>©Petpals</p>
       </div>
     </footer>
   </body>
