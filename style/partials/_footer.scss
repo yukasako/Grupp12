@@ -1,41 +1,52 @@
-.footer-container {
+.address {
   display: flex;
-  justify-content: space-between;
   align-items: center;
-  max-width: 1170px;
-  margin: 0 auto;
-  background-color: white;
-
-  .address-item {
-    display: flex;
-    align-items: center;
-    margin-right: 10px;
-
-    img {
-      margin-right: 5px;
-      width: 20px;
-      height: 20px;
-    }
+  display: flex;
+  align-items: center;
+  margin-right: 20px;
+  img {
+    margin-left: 20px;
+    width: 20px;
+    height: 20px;
   }
 }
 
 .line {
-  border: 1px solid #ccc; // Change the color and style as desired
-  // Add margin for spacing
+  border: 1px solid #ccc;
 }
 
-.footer-links a,
+.footer-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 100%;
+  margin: 0 auto;
+  background-color: white;
+
+  img {
+    width: 30px;
+    height: 30px;
+  }
+}
+
+.footer-links {
+  display: flex;
+  justify-content: space-between;
+
+    a {
+    text-decoration: none;
+    color: black;
+    margin: 0 10px;
+    font-size: 20px;
+    display: inline;
+  }
+}
+
+
 .footer-social a {
   text-decoration: none;
   color: black;
   font-size: 30px;
-  margin: 0 10px;
+  margin: 10px;
   display: inline;
-}
-footer {
-  width: 100%;
-  height: 5vh;
-  background-color: $c-1;
-  position: relative;
-  bottom: 0;
 }
