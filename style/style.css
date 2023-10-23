@@ -167,6 +167,24 @@ nav {
   width: 100%;
   background-color: white;
 }
+nav #navbar {
+  height: 2rem;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0.5rem;
+}
+nav #navbar img {
+  max-height: 100%;
+}
+nav #navbar button {
+  height: 100%;
+  width: 30px;
+  background-color: white;
+  border: solid 1px black;
+  border-radius: 5px;
+}
 
 #navbar-links {
   position: fixed;
@@ -198,6 +216,31 @@ nav {
   100% {
     transform: translateY(0);
     opacity: 1;
+  }
+}
+@media (min-width: 768px) {
+  #navbar {
+    display: flex;
+    flex-direction: row;
+  }
+  #navbar button {
+    display: none;
+  }
+  #navbar-links {
+    position: fixed;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    top: 0.2rem;
+    width: 30rem;
+    right: 1rem;
+    text-align: right;
+    padding: 0.5rem;
+    height: 2rem;
+    background-color: white;
+    display: inline-block;
+    animation: slide-in-top 0.8s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
   }
 }
 /*Om oss*/
@@ -283,7 +326,7 @@ nav {
   padding-right: 1rem;
 }
 #produkterBODY #produkter {
-  margin-top: 2rem;
+  margin-top: 4rem;
   display: flex;
   flex-direction: column;
   align-items: center;
