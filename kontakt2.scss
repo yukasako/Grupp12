@@ -1,0 +1,147 @@
+@import "style/partials/variables";
+@import "style/partials/navigation";
+@import "style/partials/footer";
+@import "style/partials/index";
+@import "style/partials/kontakt";
+@import "style/partials/omoss";
+@import "style/partials/produkt";
+@import "style/partials/referenser";
+
+.kontakt {
+    margin:0;
+    position: relative;
+    top: 10vh;
+    
+    .wrapper {
+        width: 80vw;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-bottom: 30px;
+    
+        .images{
+            width: 100%;
+
+            img{
+                border-radius: 5px;
+            }
+
+            .display-none{
+                display:none;
+            }
+        }
+
+        .form {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            background: lightgray;
+            text-align: center;
+            font-size: $m;
+            font-family: $font-1;
+            border-radius: 5px;
+
+            h1 {
+                text-align: center;
+            }
+  
+            .contacts {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+
+                label {
+                }
+
+                input {
+                    border-radius: 5px;
+                    width: 60vw;
+                }
+            }
+
+            .account-type {
+                width: 60vw;
+                display: flex;
+                flex-direction: column;
+
+                .ratio-options{
+                    input {
+                    }
+                }
+            }
+
+            .topic {
+                display: flex;
+                flex-direction: column;
+
+                select{
+                    width: 60vw;
+                }
+            }
+
+            textarea {
+                border-radius: 5px;
+                width: 60vw;
+            }
+
+            button {
+                @include button;
+                margin: 30px;
+            }
+
+            button:hover {
+                @include buttonHover();
+            }
+        }
+    }
+  
+    /* DESKTOP*/
+  
+    @media (min-width: 1024px) {
+
+        .wrapper {
+            display: flex;
+            flex-direction: row;
+            margin-bottom: 30px;
+            gap: 20px;
+
+            .images{
+
+                .display-none{
+                    display: block;
+                    font-size: $xl;
+                }
+            }
+    
+            .form {
+                width: 50%;
+                padding-top: 20px;
+
+                h1.display-none{
+                    display: none;
+                }
+
+                .contacts {
+                    display: flex;
+                    flex-direction: column;
+                    align-items: center;
+
+                    input {
+                        width: 30vw;
+                    }
+                }
+
+                .topic {
+                    select{
+                        width: 30vw;
+                    }
+                }
+    
+                textarea {
+                    border-radius: 5px;
+                    width: 30vw;
+                }
+            }
+        }
+    }
+}
