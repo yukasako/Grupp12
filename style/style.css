@@ -324,7 +324,7 @@
   height: 100vh;
   background: url("/img/topImage-1.jpg") no-repeat center;
   background-size: cover;
-  font-family: serif;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
 }
 .index main {
   width: 100%;
@@ -341,7 +341,7 @@
 }
 .index main p {
   width: 70%;
-  font-family: serif;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
   text-align: center;
   font-size: 1rem;
 }
@@ -479,7 +479,7 @@
 
 /*Om oss*/
 .omoss {
-  font-family: serif;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
 }
 .omoss .hero {
   width: 80%;
@@ -636,6 +636,7 @@
   box-sizing: border-box;
   padding: 0;
   margin: 0;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
 }
 #referenserBODY #referenser {
   margin-top: 2rem;
