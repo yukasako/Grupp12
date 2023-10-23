@@ -328,79 +328,68 @@ nav #navbar button {
 
 .kontakt {
   box-sizing: border-box;
-  padding: 0;
-  margin: 20px;
   /* DESKTOP*/
 }
 .kontakt body {
-  background-color: white;
+  width: 100%;
   color: black;
   line-height: 2;
-  padding: 1em;
   font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
 }
 .kontakt .wrapper {
-  padding: 1em;
+  width: 100%;
   display: flex;
   flex-direction: column;
+  align-items: center;
 }
-.kontakt .container {
-  max-width: 1170px;
-  margin-left: auto;
-  margin-right: auto;
-  padding: 1em;
-  text-align: center;
+.kontakt .wrapper img {
+  width: 100%;
 }
-.kontakt .container img {
-  width: 400px;
-  height: 200px;
-  margin: 20px;
-}
-.kontakt .container h1 {
+.kontakt .wrapper h1 {
   text-align: center;
   font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
   font-weight: 150;
 }
-.kontakt .container .form {
+.kontakt .wrapper .form {
+  width: 100%;
   display: flex;
   flex-direction: column;
   align-items: center;
   background: lightgray;
-  padding: 20px 20px;
-  text-align: justify;
+  text-align: center;
   font-size: 19px;
   border-radius: 5px;
-  margin: 10px;
   font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
 }
-.kontakt .container .form .contacts label {
+.kontakt .wrapper .form .contacts label {
   display: inline-block;
   width: 100px;
 }
-.kontakt .container .form .contacts input {
+.kontakt .wrapper .form .contacts input {
   display: inline-block;
   width: 200px;
   height: 30px;
   margin: 20px;
   border-radius: 5px;
 }
-.kontakt .container .form .account-type {
+.kontakt .wrapper .form .account-type {
   display: flex;
   font-size: 18px;
   margin: 10px;
 }
-.kontakt .container .form .account-type input {
+.kontakt .wrapper .form .account-type input {
   height: 10px;
   width: 20px;
 }
-.kontakt .container .topic {
-  width: 300px;
+.kontakt .wrapper .topic {
+  min-width: 80%;
 }
-.kontakt .container textarea {
+.kontakt .wrapper textarea {
   border-radius: 5px;
-  width: 300px;
+  min-width: 80%;
+  margin-top: 10px;
 }
-.kontakt .container button {
+.kontakt .wrapper button {
   width: 150px;
   height: 40px;
   background: #426a5a;
@@ -410,7 +399,7 @@ nav #navbar button {
   text-transform: uppercase;
   cursor: pointer;
 }
-.kontakt .container button:hover {
+.kontakt .wrapper button:hover {
   background: rgb(143, 146, 145);
 }
 @media (min-width: 1080px) {
