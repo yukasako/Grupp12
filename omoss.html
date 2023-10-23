@@ -3,6 +3,10 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css"
+    />
     <link rel="stylesheet" href="style/style.css" />
     <title>About Petpals</title>
   </head>
@@ -10,14 +14,32 @@
     <header>
       <nav>
         <div id="navbar">
-          <img src="" alt="logo" />
-          <button id="hamburger"></button>
+          <img src="./img/logo.png" alt="logo" />
+          <svg
+            id="hamburger"
+            xmlns="http://www.w3.org/2000/svg"
+            width="24"
+            height="24"
+            viewBox="0 0 24 24"
+            fill="none"
+            stroke="currentColor"
+            stroke-width="2"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            class="feather feather-align-justify"
+          >
+            <line x1="21" y1="10" x2="3" y2="10"></line>
+            <line x1="21" y1="6" x2="3" y2="6"></line>
+            <line x1="21" y1="14" x2="3" y2="14"></line>
+            <line x1="21" y1="18" x2="3" y2="18"></line>
+          </svg>
         </div>
         <div id="navbar-links" class="display">
-          <a href="#">Home</a>
-          <a href="#">About Us</a>
-          <a href="#">Products</a>
-          <a href="#">Contact</a>
+          <a href="./index.html">Home</a>
+          <a href="./kontakt.html">About Us</a>
+          <a href="./omoss.html">Products</a>
+          <a href="./produkt.html">Reviews</a>
+          <a href="./kontakt.html">Contact</a>
         </div>
       </nav>
     </header>
@@ -61,10 +83,7 @@
             </div>
           </li>
           <li class="timeline-list-item">
-            <div class="date">
-              2023 <br />
-              (Present)
-            </div>
+            <div class="date">2023</div>
             <div class="content">
               Petpals continues to grow, setting new standards for pet sharing
               and providing users with new friends and wonderful pet
@@ -78,7 +97,7 @@
       <div class="container">
         <h2>Members</h2>
 
-        <div class="members">        
+        <div class="members">
           <div class="member">
             <img src="img/portrait-1.jpg" alt="member" class="portrait" />
             <h3>Lisa</h3>
@@ -88,9 +107,9 @@
                 <p>lisa@petpals.com</p>
               </div>
               <p>
-                Founder of PetShare and a passionate dog lover. Our mission is to
-                connect pet enthusiasts and nurture new friendships. Mother of 2
-                dogs and 1 cat.
+                Founder of PetShare and a passionate dog lover. Our mission is
+                to connect pet enthusiasts and nurture new friendships. Mother
+                of 2 dogs and 1 cat.
               </p>
             </div>
           </div>
@@ -103,8 +122,8 @@
                 <p>jonas@pethem.com</p>
               </div>
               <p>
-                Working tirelessly to smoothly operate the pet-sharing service and
-                provide users with reliability and safety. Love birds.
+                Working tirelessly to smoothly operate the pet-sharing service
+                and provide users with reliability and safety. Love birds.
               </p>
             </div>
           </div>
@@ -115,17 +134,16 @@
               <div class="TitleEmail">
                 <p>Marketer</p>
                 <p>jenia@petpals.com</p>
-            </div>
+              </div>
               <p>
-                Driven to strengthen connections among pet enthusiasts and spread
-                the message of Petpals.
+                Driven to strengthen connections among pet enthusiasts and
+                spread the message of Petpals.
               </p>
             </div>
           </div>
         </div>
 
         <div class="members">
-
           <div class="member">
             <img src="img/portrait-4.jpg" alt="member" class="portrait" />
             <h3>Yukako</h3>
@@ -151,8 +169,8 @@
               </div>
               <p>
                 As a Pet Wellbeing Specialist and Coordinator, I focus on the
-                happiness and safety of pets, providing support and advice to both
-                pet owners and caregivers.
+                happiness and safety of pets, providing support and advice to
+                both pet owners and caregivers.
               </p>
             </div>
           </div>
@@ -165,17 +183,14 @@
                 <p>Pet Wellbeing Specialist</p>
                 <p>sofia@petpals.com</p>
               </div>
-                <p>
-                  Focusing on the happiness and safety of pets, providing support
-                  and advice to both pet owners and caregivers.
-                </p>
+              <p>
+                Focusing on the happiness and safety of pets, providing support
+                and advice to both pet owners and caregivers.
+              </p>
             </div>
           </div>
-
         </div>
-
       </div>
-
     </main>
 
     <footer class="footer">
@@ -191,22 +206,24 @@
       </div>
       <hr class="line" />
 
-      <div>
-        <div class="footer-container">
-          <div class="footer-links">
-            <img src="./img/logo.png" alt="Logo">
-            <a href="#">Home</a>
-            <a href="#">About Us</a>
-            <a href="#">Products</a>
-            <a href="#">Contact</a>
-          </div>
+      <div class="footer-container">
+        <div class="footer-links">
+          <img src="./img/logo.png" alt="Logo" />
+          <a href="#">Home</a>
+          <a href="#">About Us</a>
+          <a href="#">Products</a>
+          <a href="#">Contact</a>
+        </div>
+
+        <div class="CopyAndSocial">
+          <p>©Petpals</p>
           <div class="footer-social">
             <a href="#"><i class="fab fa-instagram"></i></a>
             <a href="#"><i class="fab fa-facebook-f"></i></a>
           </div>
         </div>
-        <p>©Petpals</p>
       </div>
     </footer>
   </body>
+  <script src="./script.js"></script>
 </html>

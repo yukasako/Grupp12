@@ -14,14 +14,32 @@
     <header>
       <nav>
         <div id="navbar">
-          <img src="" alt="logo" />
-          <button id="hamburger"></button>
+          <img src="./img/logo.png" alt="logo" />
+          <svg
+            id="hamburger"
+            xmlns="http://www.w3.org/2000/svg"
+            width="24"
+            height="24"
+            viewBox="0 0 24 24"
+            fill="none"
+            stroke="currentColor"
+            stroke-width="2"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            class="feather feather-align-justify"
+          >
+            <line x1="21" y1="10" x2="3" y2="10"></line>
+            <line x1="21" y1="6" x2="3" y2="6"></line>
+            <line x1="21" y1="14" x2="3" y2="14"></line>
+            <line x1="21" y1="18" x2="3" y2="18"></line>
+          </svg>
         </div>
         <div id="navbar-links" class="display">
-          <a href="#">Home</a>
-          <a href="#">About Us</a>
-          <a href="#">Products</a>
-          <a href="#">Contact</a>
+          <a href="./index.html">Home</a>
+          <a href="./kontakt.html">About Us</a>
+          <a href="./omoss.html">Products</a>
+          <a href="./produkt.html">Reviews</a>
+          <a href="./kontakt.html">Contact</a>
         </div>
       </nav>
     </header>
@@ -38,10 +56,21 @@
           <p>
             <label for="">Name</label>
             <input type="text" name="name" />
+
           </p>
           <p>
             <label for="">Email </label>
             <input type="email" name="email" />
+
+          </p>
+          <p>
+            <label for="">Email </label>
+            <input type="email" name="email" />
+          </p>
+          <p>
+            <label for="">Phone number</label>
+            <input type="number" name="number" />
+
           </p>
           <p>
             <label for="">Phone number</label>
@@ -71,6 +100,31 @@
             </label>
           </div>
         </div>
+
+        <div class="account-type">
+          <label for="account-type">Account Type</label>
+          <div class="radio-options">
+            <label for="owner">
+              <input
+                id="owner"
+                type="radio"
+                name="account-type"
+                class="inline"
+              />
+              Pet Owner
+            </label>
+            <label for="renter">
+              <input
+                id="renter"
+                type="radio"
+                name="account-type"
+                class="inline"
+              />
+              Caretaker
+            </label>
+          </div>
+        </div>
+
 
         <p>
           <label for="topic">Topic of your mail</label>
@@ -109,6 +163,7 @@
       </div>
       <hr class="line" />
 
+
       <div>
         <div class="footer-container">
           <div class="footer-links">
@@ -118,12 +173,24 @@
             <a href="#">Products</a>
             <a href="#">Contact</a>
           </div>
+
+      <div class="footer-container">
+        <div class="footer-links">
+          <img src="./img/logo.png" alt="Logo" />
+          <a href="#">Home</a>
+          <a href="#">About Us</a>
+          <a href="#">Products</a>
+          <a href="#">Contact</a>
+        </div>
+
+        <div class="CopyAndSocial">
+          <p>©Petpals</p>
+
           <div class="footer-social">
             <a href="#"><i class="fab fa-instagram"></i></a>
             <a href="#"><i class="fab fa-facebook-f"></i></a>
           </div>
         </div>
-        <p>©Petpals</p>
       </div>
     </footer>
   </body>
