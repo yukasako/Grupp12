@@ -1,29 +1,22 @@
-@import "style/partials/variables";
-@import "style/partials/navigation";
-@import "style/partials/footer";
-@import "style/partials/index";
-@import "style/partials/kontakt";
-@import "style/partials/omoss";
-@import "style/partials/produkt";
-@import "style/partials/referenser";
-
-.kontakt {
+.kontakt2 {
     margin:0;
     position: relative;
     top: 10vh;
     
     .wrapper {
-        width: 80vw;
         display: flex;
         flex-direction: column;
         align-items: center;
         margin-bottom: 30px;
+        gap: 10px;
     
         .images{
-            width: 100%;
+            display: flex;
+            flex-direction: column;
 
             img{
                 border-radius: 5px;
+                width: 80vw;
             }
 
             .display-none{
@@ -32,23 +25,25 @@
         }
 
         .form {
-            display: flex;
-            flex-direction: column;
-            align-items: center;
+            width: 80vw;
             background: lightgray;
             text-align: center;
             font-size: $m;
             font-family: $font-1;
             border-radius: 5px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 20px;
 
             h1 {
-                text-align: center;
             }
   
             .contacts {
                 display: flex;
                 flex-direction: column;
                 align-items: center;
+                gap: 10px;
 
                 label {
                 }
@@ -63,6 +58,7 @@
                 width: 60vw;
                 display: flex;
                 flex-direction: column;
+                gap: 10px;
 
                 .ratio-options{
                     input {
@@ -73,6 +69,7 @@
             .topic {
                 display: flex;
                 flex-direction: column;
+                gap: 10px;
 
                 select{
                     width: 60vw;
@@ -86,7 +83,7 @@
 
             button {
                 @include button;
-                margin: 30px;
+                margin: 20px;
             }
 
             button:hover {
@@ -102,20 +99,35 @@
         .wrapper {
             display: flex;
             flex-direction: row;
-            margin-bottom: 30px;
+            justify-content: center;
+            align-items: flex-start;
             gap: 20px;
 
             .images{
+                height: 70vh;
+                display: flex;
+                flex-direction: column;
+                justify-content: space-between;
+
+                img{
+                    width: 40vw;
+                }
 
                 .display-none{
                     display: block;
                     font-size: $xl;
+                    font-family: $font-1;
                 }
             }
     
             .form {
-                width: 50%;
                 padding-top: 20px;
+                width: 40vw;
+                height: 70vh;
+                display: flex;
+                flex-direction: column;
+                align-items: space-around;
+                justify-content: space-around;
 
                 h1.display-none{
                     display: none;
@@ -141,6 +153,11 @@
                     border-radius: 5px;
                     width: 30vw;
                 }
+
+                button {
+                    margin: 0;
+                }
+
             }
         }
     }
