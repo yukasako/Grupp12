@@ -1,35 +1,35 @@
-.footer{
+.footer {
   width: 100%;
   background-color: white;
 
   .address {
-  margin-top: 20px;
-  display: flex;
-  justify-content: center;
-  display: flex;
-  align-items: center;
-  margin-right: 20px;
-  img {
-    margin-left: 20px;
-    width: 20px;
-    height: 20px;
-  }
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+    display: flex;
+    align-items: center;
+    margin-right: 20px;
+    img {
+      margin-left: 20px;
+      width: 20px;
+      height: 20px;
+    }
   }
 
   .line {
-  border: 1px solid #ccc;
+    border: 1px solid #ccc;
   }
 
-  .logoToCopyright{
+  .logoToCopyright {
     padding: 10px;
   }
 
   .footer-container {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  max-width: 100%;
-  background-color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 100%;
+    background-color: white;
 
     img {
       width: 30px;
@@ -39,14 +39,14 @@
     .footer-links {
       display: flex;
       justify-content: space-between;
-  
+
       a {
-      text-decoration: none;
-      color: black;
-      margin: 0 10px;
-      font-size: 20px;
-      display: inline;
-    }
+        text-decoration: none;
+        color: black;
+        margin: 0 10px;
+        font-size: 20px;
+        display: inline;
+      }
     }
 
     .footer-social a {
