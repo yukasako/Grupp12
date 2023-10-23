@@ -294,6 +294,9 @@ footer {
 }
 
 /*Om oss*/
+.omoss {
+  font-family: serif;
+}
 .omoss .hero {
   width: 80%;
 }
@@ -306,6 +309,7 @@ footer {
 }
 .omoss h2 {
   text-align: center;
+  font-family: arial;
 }
 .omoss .timeline {
   width: 80%;
