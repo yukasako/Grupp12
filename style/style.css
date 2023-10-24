@@ -38,6 +38,21 @@ nav #navbar img {
 #navbar-links a:hover {
   text-decoration: underline;
 }
+#navbar-links #link_home {
+  color: orange;
+}
+#navbar-links #link_about {
+  color: orange;
+}
+#navbar-links #link_product {
+  color: orange;
+}
+#navbar-links #link_review {
+  color: orange;
+}
+#navbar-links #link_kontact {
+  color: orange;
+}
 
 .display {
   display: none !important;
