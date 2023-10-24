@@ -1,159 +1,157 @@
 .kontakt {
-    margin: 0;
-    margin-top: 8vh;
-    font-family: $font-1;
-    
-    .wrapper {
+  margin: 0;
+  margin-top: 8vh;
+  font-family: $font-1;
+
+  .wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 30px;
+    gap: 10px;
+
+    .images {
+      display: flex;
+      flex-direction: column;
+
+      img {
+        border-radius: 5px;
+        width: 80vw;
+      }
+
+      .display-none-mobile {
+        display: none;
+      }
+    }
+
+    .form {
+      width: 80vw;
+      background: lightgray;
+      text-align: center;
+      font-size: $m;
+      font-family: $font-1;
+      border-radius: 5px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 20px;
+
+      .contacts {
         display: flex;
         flex-direction: column;
         align-items: center;
-        margin-bottom: 30px;
         gap: 10px;
-    
-        .images{
-            display: flex;
-            flex-direction: column;
 
-            img{
-                border-radius: 5px;
-                width: 80vw;
-            }
+        input {
+          border-radius: 5px;
+          width: 60vw;
+        }
+      }
 
-            .display-none-mobile{
-                display:none;
-            }
+      .account-type {
+        width: 60vw;
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+      }
+
+      .topic {
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+
+        select {
+          width: 60vw;
+        }
+      }
+
+      textarea {
+        border-radius: 5px;
+        width: 60vw;
+      }
+
+      button {
+        @include button;
+        margin: 20px;
+      }
+
+      button:hover {
+        @include buttonHover();
+      }
+    }
+  }
+
+  /* DESKTOP*/
+
+  @media (min-width: 1024px) {
+    .wrapper {
+      min-height: 75vh;
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+      align-items: flex-start;
+      gap: 20px;
+
+      .images {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+
+        img {
+          width: auto;
         }
 
-        .form {
-            width: 80vw;
-            background: lightgray;
-            text-align: center;
-            font-size: $m;
-            font-family: $font-1;
-            border-radius: 5px;
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            gap: 20px;
-  
-            .contacts {
-                display: flex;
-                flex-direction: column;
-                align-items: center;
-                gap: 10px;
-
-                input {
-                    border-radius: 5px;
-                    width: 60vw;
-                }
-            }
-
-            .account-type {
-                width: 60vw;
-                display: flex;
-                flex-direction: column;
-                gap: 10px;
-            }
-
-            .topic {
-                display: flex;
-                flex-direction: column;
-                gap: 10px;
-
-                select{
-                    width: 60vw;
-                }
-            }
-
-            textarea {
-                border-radius: 5px;
-                width: 60vw;
-            }
-
-            button {
-                @include button;
-                margin: 20px;
-            }
-
-            button:hover {
-                @include buttonHover();
-            }
+        .display-none-mobile {
+          display: block;
+          font-size: $xl;
+          font-family: $font-1;
+          img {
+            height: 70vh;
+          }
         }
-    }
-  
-    /* DESKTOP*/
-  
-    @media (min-width: 1024px) {
 
-        .wrapper {         
-            min-height: 75vh;
-            display: flex;
-            flex-direction: row;
-            justify-content: center;
-            align-items: flex-start;
-            gap: 20px;
-
-            .images{
-                display: flex;
-                flex-direction: column;
-                justify-content: space-between;
-
-                img{
-                    width: auto;
-                }
-
-                .display-none-mobile{
-                    display: block;
-                    font-size: $xl;
-                    font-family: $font-1;
-                    img{
-                        height: 70vh;
-                    }
-                }
-
-                .display-none-desktop{
-                    display:none;
-                }
-            }
-    
-            .form {
-                width: 40vw;
-                height: 70vh;
-                display: flex;
-                flex-direction: column;
-                align-items: space-around;
-                justify-content: space-around;
-
-                .contacts {
-                    display: flex;
-                    flex-direction: column;
-                    align-items: center;
-
-                    input {
-                        width: 30vw;
-                    }
-                }
-
-                .topic {
-                    select{
-                        width: 30vw;
-                    }
-                }
-    
-                textarea {
-                    border-radius: 5px;
-                    width: 30vw;
-                }
-
-                button {
-                    margin: 10;
-                }
-
-            }
+        .display-none-desktop {
+          display: none;
         }
+      }
+
+      .form {
+        width: 40vw;
+        height: 70vh;
+        display: flex;
+        flex-direction: column;
+        align-items: space-around;
+        justify-content: space-around;
+
+        .contacts {
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+
+          input {
+            width: 30vw;
+          }
+        }
+
+        .topic {
+          select {
+            width: 30vw;
+          }
+        }
+
+        textarea {
+          border-radius: 5px;
+          width: 30vw;
+        }
+
+        button {
+          margin: 10;
+        }
+      }
     }
-    
-    #link_kontakt {
-        color: $c-6;
-    }
+  }
+
+  #link_kontakt {
+    color: $c-6;
+  }
 }
