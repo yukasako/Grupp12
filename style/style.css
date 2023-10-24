@@ -38,21 +38,6 @@ nav #navbar img {
 #navbar-links a:hover {
   text-decoration: underline;
 }
-#navbar-links #link_home {
-  color: orange;
-}
-#navbar-links #link_about {
-  color: orange;
-}
-#navbar-links #link_product {
-  color: orange;
-}
-#navbar-links #link_review {
-  color: orange;
-}
-#navbar-links #link_kontact {
-  color: orange;
-}
 
 .display {
   display: none !important;
@@ -219,6 +204,9 @@ nav #navbar img {
     font-size: 1.2rem;
   }
 }
+.index #link_home {
+  color: orange;
+}
 
 .kontakt {
   box-sizing: border-box;
@@ -311,6 +299,9 @@ nav #navbar img {
   .kontakt .footer {
     width: 100%;
   }
+}
+.kontakt #link_kontact {
+  color: orange;
 }
 
 .kontakt2 {
@@ -539,6 +530,9 @@ nav #navbar img {
     border-radius: 50%;
   }
 }
+.omoss #link_about {
+  color: orange;
+}
 
 #produkterBODY {
   box-sizing: border-box;
@@ -604,6 +598,9 @@ nav #navbar img {
   border: solid 2px orange;
   transition-duration: 300ms;
 }
+#produkterBODY #link_product {
+  color: orange;
+}
 
 #referenserBODY {
   box-sizing: border-box;
@@ -664,4 +661,7 @@ nav #navbar img {
   #referenserBODY #referenser .reviewCard {
     margin: 2rem;
   }
+}
+#referenserBODY #link_review {
+  color: orange;
 }/*# sourceMappingURL=style.css.map */
