@@ -1,7 +1,6 @@
 .kontakt {
-    margin:0;
-    position: relative;
-    top: 10vh;
+    margin: 0;
+    margin-top: 8vh;
     
     .wrapper {
         display: flex;
@@ -19,7 +18,7 @@
                 width: 80vw;
             }
 
-            .display-none{
+            .display-none-mobile{
                 display:none;
             }
         }
@@ -96,7 +95,8 @@
   
     @media (min-width: 1024px) {
 
-        .wrapper {
+        .wrapper {         
+            min-height: 75vh;
             display: flex;
             flex-direction: row;
             justify-content: center;
@@ -104,34 +104,35 @@
             gap: 20px;
 
             .images{
-                height: 70vh;
                 display: flex;
                 flex-direction: column;
                 justify-content: space-between;
 
                 img{
-                    width: 40vw;
+                    width: auto;
                 }
 
-                .display-none{
+                .display-none-mobile{
                     display: block;
                     font-size: $xl;
                     font-family: $font-1;
+                    img{
+                        height: 70vh;
+                    }
+                }
+
+                .display-none-desktop{
+                    display:none;
                 }
             }
     
             .form {
-                padding-top: 20px;
                 width: 40vw;
                 height: 70vh;
                 display: flex;
                 flex-direction: column;
                 align-items: space-around;
                 justify-content: space-around;
-
-                h1.display-none{
-                    display: none;
-                }
 
                 .contacts {
                     display: flex;
@@ -155,7 +156,7 @@
                 }
 
                 button {
-                    margin: 0;
+                    margin: 10;
                 }
 
             }

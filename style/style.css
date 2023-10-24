@@ -209,8 +209,7 @@ nav #navbar img {
 
 .kontakt {
   margin: 0;
-  position: relative;
-  top: 10vh;
+  margin-top: 8vh;
   /* DESKTOP*/
 }
 .kontakt .wrapper {
@@ -228,7 +227,7 @@ nav #navbar img {
   border-radius: 5px;
   width: 80vw;
 }
-.kontakt .wrapper .images .display-none {
+.kontakt .wrapper .images .display-none-mobile {
   display: none;
 }
 .kontakt .wrapper .form {
@@ -288,6 +287,7 @@ nav #navbar img {
 }
 @media (min-width: 1024px) {
   .kontakt .wrapper {
+    min-height: 75vh;
     display: flex;
     flex-direction: row;
     justify-content: center;
@@ -295,30 +295,31 @@ nav #navbar img {
     gap: 20px;
   }
   .kontakt .wrapper .images {
-    height: 70vh;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
   }
   .kontakt .wrapper .images img {
-    width: 40vw;
+    width: auto;
   }
-  .kontakt .wrapper .images .display-none {
+  .kontakt .wrapper .images .display-none-mobile {
     display: block;
     font-size: 4rem;
     font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
   }
+  .kontakt .wrapper .images .display-none-mobile img {
+    height: 70vh;
+  }
+  .kontakt .wrapper .images .display-none-desktop {
+    display: none;
+  }
   .kontakt .wrapper .form {
-    padding-top: 20px;
     width: 40vw;
     height: 70vh;
     display: flex;
     flex-direction: column;
     align-items: space-around;
     justify-content: space-around;
-  }
-  .kontakt .wrapper .form h1.display-none {
-    display: none;
   }
   .kontakt .wrapper .form .contacts {
     display: flex;
@@ -336,7 +337,7 @@ nav #navbar img {
     width: 30vw;
   }
   .kontakt .wrapper .form button {
-    margin: 0;
+    margin: 10;
   }
 }
 
