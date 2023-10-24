@@ -2,7 +2,7 @@ nav {
   position: fixed;
   top: 0;
   width: 100%;
-  background-color: white;
+  background-color: transparent;
 }
 nav #navbar {
   height: 2rem;
@@ -203,8 +203,107 @@ nav #navbar img {
     font-size: 1.2rem;
   }
 }
+.index #link_home {
+  color: orange;
+}
 
 .kontakt {
+  box-sizing: border-box;
+  line-height: 2;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  /* DESKTOP*/
+}
+.kontakt .wrapper {
+  width: 80%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.kontakt .wrapper img {
+  width: 100%;
+}
+.kontakt .wrapper h1 {
+  text-align: center;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  font-weight: 150;
+}
+.kontakt .wrapper .form {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background: lightgray;
+  text-align: center;
+  font-size: 19px;
+  border-radius: 5px;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+}
+.kontakt .wrapper .form .contacts label {
+  display: inline-block;
+  width: 100px;
+}
+.kontakt .wrapper .form .contacts input {
+  display: inline-block;
+  width: 200px;
+  height: 30px;
+  margin: 20px;
+  border-radius: 5px;
+}
+.kontakt .wrapper .form .account-type {
+  display: flex;
+  font-size: 18px;
+  margin: 10px;
+}
+.kontakt .wrapper .form .account-type input {
+  height: 10px;
+  width: 20px;
+}
+.kontakt .wrapper .topic {
+  min-width: 80%;
+}
+.kontakt .wrapper textarea {
+  border-radius: 5px;
+  min-width: 80%;
+  margin-top: 10px;
+}
+.kontakt .wrapper button {
+  width: 150px;
+  height: 40px;
+  background: #426a5a;
+  border-radius: 5px;
+  color: white;
+  border: 0;
+  text-transform: uppercase;
+  cursor: pointer;
+}
+.kontakt .wrapper button:hover {
+  background: rgb(143, 146, 145);
+}
+@media (min-width: 1080px) {
+  .kontakt .wrapper {
+    display: flex;
+    flex-direction: row;
+  }
+  .kontakt .footer {
+    width: 100%;
+    margin-bottom: 30px;
+    text-align: center;
+  }
+}
+@media (max-width: 555px) {
+  .kontakt .footer {
+    width: 100%;
+  }
+}
+.kontakt #link_kontact {
+  color: orange;
+}
+
+.kontakt2 {
   margin: 0;
   margin-top: 8vh;
   /* DESKTOP*/
@@ -433,6 +532,9 @@ nav #navbar img {
     border-radius: 50%;
   }
 }
+.omoss #link_about {
+  color: orange;
+}
 
 #produkterBODY {
   box-sizing: border-box;
@@ -496,6 +598,9 @@ nav #navbar img {
   cursor: pointer;
   border: solid 2px orange;
   transition-duration: 300ms;
+}
+#produkterBODY #link_product {
+  color: orange;
 }
 
 #referenserBODY {
@@ -570,4 +675,7 @@ nav #navbar img {
   #referenserBODY main #referenser .reviewCard {
     margin: 2rem;
   }
+}
+#referenserBODY #link_review {
+  color: orange;
 }/*# sourceMappingURL=style.css.map */

@@ -3,6 +3,55 @@
     margin-top: 8vh;
     
     .wrapper {
+  box-sizing: border-box;
+  line-height: 2;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  .wrapper {
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    img {
+      width: 100%;
+    }
+    h1 {
+      text-align: center;
+      font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS",
+        sans-serif;
+      font-weight: 150;
+    }
+    .form {
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      background: lightgray;
+      text-align: center;
+      font-size: 19px;
+      border-radius: 5px;
+      font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS",
+        sans-serif;
+
+      .contacts {
+        label {
+          display: inline-block;
+          width: 100px;
+        }
+        input {
+          display: inline-block;
+          width: 200px;
+          height: 30px;
+          margin: 20px;
+          border-radius: 5px;
+        }
+      }
+      .account-type {
         display: flex;
         flex-direction: column;
         align-items: center;
@@ -162,4 +211,9 @@
             }
         }
     }
+  }
+
+  #link_kontact {
+    color: $c-6;
+  }
 }
