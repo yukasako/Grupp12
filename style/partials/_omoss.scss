@@ -1,11 +1,11 @@
 /*Om oss*/
 .omoss {
-    margin: 0;
-    font-family: $font-1;
+  margin: 0;
+  font-family: $font-1;
 
-    .hero{
-        width: 80%;
-    }
+  .hero {
+    width: 80%;
+  }
 
     main {
         width: 100%;
@@ -13,99 +13,102 @@
         flex-direction: column;
         justify-content: center;
         align-items: center;
+        padding-top: 8vh;
     }
 
-    h2 {
+  h2 {
     text-align: center;
     font-family: $font-2;
-    }
+  }
 
-    .timeline {
+  .timeline {
     width: 80%;
     max-width: 940px;
     margin: 28px auto;
-    
-        &-list {
-            padding: 40px 0;
-        
-            &-item {
-                display: flex;
-                line-height: 1.5;
-                font-size: 16px;
-                
-                .date {
-                    width: 20%;
-                    padding: 0 0 0 20px;
-                    color: #888888;
-                    font-weight: bold;
-                }
-            
-               .content {
-                    position: relative;
-                    width: 80%;
-                    padding: 0 20px 60px 30px;
-                    border-left: 1px solid #aaaaaa;
-                
-                    &::before {
-                        content: "";
-                        position: absolute;
-                        top: 0;
-                        left: -5px; //widthの半分の値を指定
-                        width: 10px;
-                        height: 10px;
-                        background-color: $c-3;
-                        border-radius: 10px;
-                    }
-                }
-            }
-        }
-    }
 
-    .container {
-        width: 80%;
+    &-list {
+      padding: 40px 0;
+
+      &-item {
         display: flex;
-        flex-direction: column;
-        align-items: center;
+        line-height: 1.5;
+        font-size: 16px;
 
-        .member{
+        .date {
+          width: 20%;
+          padding: 0 0 0 20px;
+          color: #888888;
+          font-weight: bold;
+        }
+
+        .content {
+          z-index: -1;
+          position: relative;
+          width: 80%;
+          padding: 0 20px 60px 30px;
+          border-left: 1px solid #aaaaaa;
+
+          &::before {
+            content: "";
+            position: absolute;
+            top: 0;
+            left: -5px; //widthの半分の値を指定
+            width: 10px;
+            height: 10px;
+            background-color: $c-3;
+            border-radius: 10px;
+          }
+        }
+      }
+    }
+  }
+
+  .container {
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    .member {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      margin: 5vh;
+
+      .TitleEmail {
         display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        margin: 5vh;
+        justify-content: space-between;
+        color: #888888;
+      }
 
-            .TitleEmail{
-                display: flex;
-                justify-content: space-between;
-                color: #888888;
-            }
-
-            .portrait{
-                width: 40vh;
-                height: 40vh;
-                border-radius: 50%;
-            }
-        }
+      .portrait {
+        width: 40vh;
+        height: 40vh;
+        border-radius: 50%;
+      }
     }
+  }
 
+  @media (min-width: 1024px) {
+    .members {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
 
-    @media (min-width: 1024px){
-        .members {
-            display: flex;
-            flex-direction: row;
-            justify-content: space-between;
+      .member {
+        width: 25%;
+        justify-content: flex-start;
 
-            .member {
-                width: 25%;
-                justify-content: flex-start;
-
-                .portrait{
-                    width: 20vw;
-                    height: 20vw;
-                    border-radius: 50%;
-                }
-            }            
+        .portrait {
+          width: 20vw;
+          height: 20vw;
+          border-radius: 50%;
         }
+      }
     }
-
+  }
+  #link_about {
+    color: $c-6;
+  }
 }

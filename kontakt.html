@@ -4,11 +4,8 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Kontakt</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css"/>
     <link rel="stylesheet" href="style/style.css" />
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css"
-    />
   </head>
   <body class="kontakt">
     <header>
@@ -35,118 +32,79 @@
           </svg>
         </div>
         <div id="navbar-links" class="display">
-          <a href="./index.html">Home</a>
-          <a href="./kontakt.html">About Us</a>
-          <a href="./omoss.html">Products</a>
-          <a href="./produkt.html">Reviews</a>
-          <a href="./kontakt.html">Contact</a>
+          <a id="link_home" href="./index.html">Home</a>
+          <a id="link_about" href="./omoss.html">About Us</a>
+          <a id="link_product" href="./produkt.html">Products</a>
+          <a id="link_review" href="./referenser.html">Reviews</a>
+          <a id="link_kontakt" href="./kontakt.html">Contact</a>
         </div>
       </nav>
     </header>
 
     <div class="wrapper">
-      <div class="image">
-        <img src="/img/building.png" alt="" />
+      <div class="images">
+        <div class="display-none-mobile">
+          <img src="/img/office2.png" alt="office"/>
+        </div>
+        <div class="display-none-desktop">
+          <img src="/img/office.png" alt="office"/>
+        </div>
       </div>
 
       <div class="form">
         <h1>Contact us</h1>
 
         <div class="contacts">
-          <p>
-            <label for="">Name</label>
-            <input type="text" name="name" />
-
-          </p>
-          <p>
-            <label for="">Email </label>
-            <input type="email" name="email" />
-
-          </p>
-          <p>
-            <label for="">Email </label>
-            <input type="email" name="email" />
-          </p>
-          <p>
-            <label for="">Phone number</label>
-            <input type="number" name="number" />
-
-          </p>
-          <p>
-            <label for="">Phone number</label>
-            <input type="number" name="number" />
-          </p>
-        </div>
-        <div class="account-type">
-          <label for="account-type">Account Type</label>
-          <div class="radio-options">
-            <label for="owner">
-              <input
-                id="owner"
-                type="radio"
-                name="account-type"
-                class="inline"
-              />
-              Pet Owner
-            </label>
-            <label for="renter">
-              <input
-                id="renter"
-                type="radio"
-                name="account-type"
-                class="inline"
-              />
-              Caretaker
-            </label>
-          </div>
+          <label for="">Name</label>
+          <input type="text" name="name" />
+          <label for="">Email </label>
+          <input type="email" name="email" />
+          <label for="">Phone number</label>
+          <input type="number" name="number" />
         </div>
 
         <div class="account-type">
           <label for="account-type">Account Type</label>
-          <div class="radio-options">
-            <label for="owner">
-              <input
-                id="owner"
-                type="radio"
-                name="account-type"
-                class="inline"
-              />
-              Pet Owner
-            </label>
-            <label for="renter">
-              <input
-                id="renter"
-                type="radio"
-                name="account-type"
-                class="inline"
-              />
-              Caretaker
-            </label>
-          </div>
+            <div class="radio-options">
+              <label for="owner">
+                <input
+                  id="owner"
+                  type="radio"
+                  name="account-type"
+                  class="inline"
+                  />
+                Pet Owner
+              </label>
+              <label for="renter">
+                <input
+                  id="renter"
+                  type="radio"
+                  name="account-type"
+                  class="inline"
+                />
+                Caretaker
+              </label>
+            </div>
         </div>
 
-
-        <p>
+        <div class="topic">
           <label for="topic">Topic of your mail</label>
-        </p>
-        <select class="topic" name="topic">
-          <option value="">(select one)</option>
-          <option value="1">Pet Owner Registration</option>
-          <option value="2">Pet Availability</option>
-          <option value="3">Feedback and Suggestions</option>
-          <option value="4">Other</option>
-        </select>
+          <select name="topic">
+            <option value="">(select one)</option>
+            <option value="1">Pet Owner Registration</option>
+            <option value="2">Pet Availability</option>
+            <option value="3">Feedback and Suggestions</option>
+            <option value="4">Other</option>
+          </select>
+        </div>
 
         <textarea
-          id="bio"
-          name="message"
-          rows="5"
-          placeholder="Write the text..."
-        >
+              id="bio"
+              name="message"
+              rows="5"
+              placeholder="Write the text...">
         </textarea>
-        <p>
-          <button>Submit</button>
-        </p>
+        <button>Submit</button>
       </div>
     </div>
 
@@ -175,8 +133,9 @@
           </div>
 
       <div class="footer-container">
+
         <div class="footer-links">
-          <img src="./img/logo.png" alt="Logo" />
+          <img src="./img/logo.png" alt="Logo">
           <a href="#">Home</a>
           <a href="#">About Us</a>
           <a href="#">Products</a>
@@ -192,6 +151,7 @@
           </div>
         </div>
       </div>
+
     </footer>
   </body>
   <script src="./script.js"></script>

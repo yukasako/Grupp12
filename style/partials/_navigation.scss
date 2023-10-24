@@ -2,7 +2,7 @@ nav {
   position: fixed;
   top: 0;
   width: 100%;
-  background-color: $c-1;
+  background-color: transparent;
 
   #navbar {
     height: 2rem;
@@ -96,7 +96,7 @@ nav {
     text-align: right;
     padding: $s;
     height: 2rem;
-    background-color: white;
+    background-color: transparent;
     display: inline-block;
     -webkit-animation: none;
     animation: none;
