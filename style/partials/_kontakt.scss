@@ -1,57 +1,9 @@
 .kontakt {
-    margin: 0;
-    margin-top: 8vh;
+    margin:0;
+    position: relative;
+    top: 10vh;
     
     .wrapper {
-  box-sizing: border-box;
-  line-height: 2;
-  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-
-  .wrapper {
-    width: 80%;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-
-    img {
-      width: 100%;
-    }
-    h1 {
-      text-align: center;
-      font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS",
-        sans-serif;
-      font-weight: 150;
-    }
-    .form {
-      width: 100%;
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      background: lightgray;
-      text-align: center;
-      font-size: 19px;
-      border-radius: 5px;
-      font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS",
-        sans-serif;
-
-      .contacts {
-        label {
-          display: inline-block;
-          width: 100px;
-        }
-        input {
-          display: inline-block;
-          width: 200px;
-          height: 30px;
-          margin: 20px;
-          border-radius: 5px;
-        }
-      }
-      .account-type {
         display: flex;
         flex-direction: column;
         align-items: center;
@@ -67,7 +19,7 @@
                 width: 80vw;
             }
 
-            .display-none-mobile{
+            .display-none{
                 display:none;
             }
         }
@@ -144,8 +96,7 @@
   
     @media (min-width: 1024px) {
 
-        .wrapper {         
-            min-height: 75vh;
+        .wrapper {
             display: flex;
             flex-direction: row;
             justify-content: center;
@@ -153,35 +104,34 @@
             gap: 20px;
 
             .images{
+                height: 70vh;
                 display: flex;
                 flex-direction: column;
                 justify-content: space-between;
 
                 img{
-                    width: auto;
+                    width: 40vw;
                 }
 
-                .display-none-mobile{
+                .display-none{
                     display: block;
                     font-size: $xl;
                     font-family: $font-1;
-                    img{
-                        height: 70vh;
-                    }
-                }
-
-                .display-none-desktop{
-                    display:none;
                 }
             }
     
             .form {
+                padding-top: 20px;
                 width: 40vw;
                 height: 70vh;
                 display: flex;
                 flex-direction: column;
                 align-items: space-around;
                 justify-content: space-around;
+
+                h1.display-none{
+                    display: none;
+                }
 
                 .contacts {
                     display: flex;
@@ -205,15 +155,10 @@
                 }
 
                 button {
-                    margin: 10;
+                    margin: 0;
                 }
 
             }
         }
     }
-  }
-
-  #link_kontact {
-    color: $c-6;
-  }
 }
