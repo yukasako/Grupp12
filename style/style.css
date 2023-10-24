@@ -81,10 +81,10 @@ nav #navbar img {
 }
 .footer {
   width: 100%;
-  background-color: white;
+  background-color: #F2EFC7;
 }
 .footer .address {
-  margin-top: 20px;
+  padding-top: 10px;
   display: flex;
   justify-content: center;
   display: flex;
@@ -99,90 +99,51 @@ nav #navbar img {
 .footer .line {
   border: 1px solid #ccc;
 }
-.footer .logoToCopyright {
-  padding: 10px;
-}
 .footer .footer-container {
   display: flex;
-  justify-content: space-between;
-  align-items: center;
-  max-width: 100%;
-  background-color: white;
-}
-.footer .footer-container img {
-  width: 30px;
-  height: 30px;
-  background-color: #F2EFC7;
-}
-.footer .footer-container img .address {
-  padding-top: 10px;
-  display: flex;
-  justify-content: center;
-  display: flex;
-  align-items: center;
-  margin-right: 20px;
-}
-.footer .footer-container img .address img {
-  margin-left: 20px;
-  width: 20px;
-  height: 20px;
-}
-.footer .footer-container img .line {
-  border: 1px solid #ccc;
-}
-.footer .footer-container img .footer-container {
-  display: flex;
-  justify-content: space-between;
-}
-.footer .footer-container img .footer-container a {
-  text-decoration: none;
-  color: black;
-  margin: 0 10px;
-  font-size: 20px;
-  display: inline;
   flex-direction: column;
   padding-left: 10px;
   padding-right: 10px;
 }
-.footer .footer-container img .footer-container a .footer-links {
+.footer .footer-container .footer-links {
   display: flex;
   flex-direction: row;
 }
-.footer .footer-container img .footer-container a .footer-links img {
+.footer .footer-container .footer-links img {
   width: 30px;
   height: 30px;
 }
-.footer .footer-container img .footer-container a .footer-links a {
+.footer .footer-container .footer-links a {
   text-decoration: none;
   color: black;
   margin: 5px;
   font-size: 15px;
 }
-.footer .footer-container img .footer-container a .CopyAndSocial {
+.footer .footer-container .CopyAndSocial {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
 }
-.footer .footer-container img .footer-container a .CopyAndSocial .footer-social a {
+.footer .footer-container .CopyAndSocial .footer-social a {
   text-decoration: none;
   color: black;
   font-size: 25px;
   display: inline;
 }
+
 @media (min-width: 1024px) {
-  .footer .footer-container img .footer .footer-container {
+  .footer .footer-container {
     padding-left: 30px;
     padding-right: 30px;
   }
 }
-
 .index {
   margin: 0;
   font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
 }
 .index .wrapper {
   height: 100vh;
-  background: url("/img/topImage-1.jpg") no-repeat center;
+  background: url("../../img/topImage-1.jpg") no-repeat center;
   background-size: cover;
   font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
   margin: 0;
@@ -192,7 +153,7 @@ nav #navbar img {
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding-top: 8vh;
+  padding-top: 4rem;
 }
 .index .wrapper main h2 {
   font-family: arial;
@@ -249,7 +210,7 @@ nav #navbar img {
 
 .kontakt {
   margin: 0;
-  margin-top: 8vh;
+  margin-top: 4rem;
   font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
   /* DESKTOP*/
 }
@@ -399,7 +360,7 @@ nav #navbar img {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  padding-top: 8vh;
+  padding-top: 4rem;
 }
 .omoss h2 {
   text-align: center;
@@ -556,7 +517,7 @@ nav #navbar img {
   box-sizing: border-box;
   padding: 0;
   margin: 0;
-  margin-top: 8vh;
+  margin-top: 4rem;
   font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
 }
 #referenserBODY h1 {
