@@ -152,8 +152,7 @@ nav #navbar img {
   display: flex;
   flex-direction: column;
   align-items: center;
-  position: relative;
-  top: 8vh;
+  padding-top: 8vh;
 }
 .index .wrapper main h2 {
   font-family: arial;
@@ -206,123 +205,29 @@ nav #navbar img {
 }
 
 .kontakt {
-  box-sizing: border-box;
-  line-height: 2;
-  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
+  margin: 0;
+  margin-top: 8vh;
   /* DESKTOP*/
 }
 .kontakt .wrapper {
-  width: 80%;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
-.kontakt .wrapper img {
-  width: 100%;
-}
-.kontakt .wrapper h1 {
-  text-align: center;
-  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
-  font-weight: 150;
-}
-.kontakt .wrapper .form {
-  width: 100%;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  background: lightgray;
-  text-align: center;
-  font-size: 19px;
-  border-radius: 5px;
-  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
-}
-.kontakt .wrapper .form .contacts label {
-  display: inline-block;
-  width: 100px;
-}
-.kontakt .wrapper .form .contacts input {
-  display: inline-block;
-  width: 200px;
-  height: 30px;
-  margin: 20px;
-  border-radius: 5px;
-}
-.kontakt .wrapper .form .account-type {
-  display: flex;
-  font-size: 18px;
-  margin: 10px;
-}
-.kontakt .wrapper .form .account-type input {
-  height: 10px;
-  width: 20px;
-}
-.kontakt .wrapper .topic {
-  min-width: 80%;
-}
-.kontakt .wrapper textarea {
-  border-radius: 5px;
-  min-width: 80%;
-  margin-top: 10px;
-}
-.kontakt .wrapper button {
-  width: 150px;
-  height: 40px;
-  background: #426a5a;
-  border-radius: 5px;
-  color: white;
-  border: 0;
-  text-transform: uppercase;
-  cursor: pointer;
-}
-.kontakt .wrapper button:hover {
-  background: rgb(143, 146, 145);
-}
-@media (min-width: 1080px) {
-  .kontakt .wrapper {
-    display: flex;
-    flex-direction: row;
-  }
-  .kontakt .footer {
-    width: 100%;
-    margin-bottom: 30px;
-    text-align: center;
-  }
-}
-@media (max-width: 555px) {
-  .kontakt .footer {
-    width: 100%;
-  }
-}
-
-.kontakt2 {
-  margin: 0;
-  position: relative;
-  top: 10vh;
-  /* DESKTOP*/
-}
-.kontakt2 .wrapper {
   display: flex;
   flex-direction: column;
   align-items: center;
   margin-bottom: 30px;
   gap: 10px;
 }
-.kontakt2 .wrapper .images {
+.kontakt .wrapper .images {
   display: flex;
   flex-direction: column;
 }
-.kontakt2 .wrapper .images img {
+.kontakt .wrapper .images img {
   border-radius: 5px;
   width: 80vw;
 }
-.kontakt2 .wrapper .images .display-none {
+.kontakt .wrapper .images .display-none-mobile {
   display: none;
 }
-.kontakt2 .wrapper .form {
+.kontakt .wrapper .form {
   width: 80vw;
   background: lightgray;
   text-align: center;
@@ -334,35 +239,35 @@ nav #navbar img {
   align-items: center;
   gap: 20px;
 }
-.kontakt2 .wrapper .form .contacts {
+.kontakt .wrapper .form .contacts {
   display: flex;
   flex-direction: column;
   align-items: center;
   gap: 10px;
 }
-.kontakt2 .wrapper .form .contacts input {
+.kontakt .wrapper .form .contacts input {
   border-radius: 5px;
   width: 60vw;
 }
-.kontakt2 .wrapper .form .account-type {
+.kontakt .wrapper .form .account-type {
   width: 60vw;
   display: flex;
   flex-direction: column;
   gap: 10px;
 }
-.kontakt2 .wrapper .form .topic {
+.kontakt .wrapper .form .topic {
   display: flex;
   flex-direction: column;
   gap: 10px;
 }
-.kontakt2 .wrapper .form .topic select {
+.kontakt .wrapper .form .topic select {
   width: 60vw;
 }
-.kontakt2 .wrapper .form textarea {
+.kontakt .wrapper .form textarea {
   border-radius: 5px;
   width: 60vw;
 }
-.kontakt2 .wrapper .form button {
+.kontakt .wrapper .form button {
   padding: 0.5rem;
   background-color: #426a5a;
   color: white;
@@ -372,35 +277,40 @@ nav #navbar img {
   border: solid 2px transparent;
   margin: 20px;
 }
-.kontakt2 .wrapper .form button:hover {
+.kontakt .wrapper .form button:hover {
   cursor: pointer;
   border: solid 2px orange;
   transition-duration: 300ms;
 }
 @media (min-width: 1024px) {
-  .kontakt2 .wrapper {
+  .kontakt .wrapper {
+    min-height: 75vh;
     display: flex;
     flex-direction: row;
     justify-content: center;
     align-items: flex-start;
     gap: 20px;
   }
-  .kontakt2 .wrapper .images {
-    height: 70vh;
+  .kontakt .wrapper .images {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
   }
-  .kontakt2 .wrapper .images img {
-    width: 40vw;
+  .kontakt .wrapper .images img {
+    width: auto;
   }
-  .kontakt2 .wrapper .images .display-none {
+  .kontakt .wrapper .images .display-none-mobile {
     display: block;
     font-size: 4rem;
     font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
   }
-  .kontakt2 .wrapper .form {
-    padding-top: 20px;
+  .kontakt .wrapper .images .display-none-mobile img {
+    height: 70vh;
+  }
+  .kontakt .wrapper .images .display-none-desktop {
+    display: none;
+  }
+  .kontakt .wrapper .form {
     width: 40vw;
     height: 70vh;
     display: flex;
@@ -408,26 +318,23 @@ nav #navbar img {
     align-items: space-around;
     justify-content: space-around;
   }
-  .kontakt2 .wrapper .form h1.display-none {
-    display: none;
-  }
-  .kontakt2 .wrapper .form .contacts {
+  .kontakt .wrapper .form .contacts {
     display: flex;
     flex-direction: column;
     align-items: center;
   }
-  .kontakt2 .wrapper .form .contacts input {
+  .kontakt .wrapper .form .contacts input {
     width: 30vw;
   }
-  .kontakt2 .wrapper .form .topic select {
+  .kontakt .wrapper .form .topic select {
     width: 30vw;
   }
-  .kontakt2 .wrapper .form textarea {
+  .kontakt .wrapper .form textarea {
     border-radius: 5px;
     width: 30vw;
   }
-  .kontakt2 .wrapper .form button {
-    margin: 0;
+  .kontakt .wrapper .form button {
+    margin: 10;
   }
 }
 
@@ -445,7 +352,7 @@ nav #navbar img {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  margin-top: 8vh;
+  padding-top: 8vh;
 }
 .omoss h2 {
   text-align: center;
@@ -471,6 +378,7 @@ nav #navbar img {
   font-weight: bold;
 }
 .omoss .timeline-list-item .content {
+  z-index: -1;
   position: relative;
   width: 80%;
   padding: 0 20px 60px 30px;
