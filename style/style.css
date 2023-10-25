@@ -46,6 +46,10 @@ nav #navbar img {
 .scrollLock {
   overflow: hidden;
 }
+
+.bgWhite {
+  background-color: white;
+}
 @keyframes slide-in-top {
   0% {
     transform: translateY(-1000px);
@@ -153,7 +157,7 @@ nav #navbar img {
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding-top: 4rem;
+  padding-top: 6rem;
 }
 .index .wrapper main h2 {
   font-family: arial;
@@ -301,23 +305,21 @@ nav #navbar img {
     flex-direction: column;
     justify-content: space-between;
   }
-  .kontakt .wrapper .images img {
-    width: auto;
-  }
   .kontakt .wrapper .images .display-none-mobile {
     display: block;
     font-size: 4rem;
     font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
   }
   .kontakt .wrapper .images .display-none-mobile img {
-    height: 70vh;
+    width: auto;
+    height: 600px;
   }
   .kontakt .wrapper .images .display-none-desktop {
     display: none;
   }
   .kontakt .wrapper .form {
     width: 40vw;
-    height: 70vh;
+    height: 600px;
     display: flex;
     flex-direction: column;
     align-items: space-around;
@@ -353,6 +355,7 @@ nav #navbar img {
 }
 .omoss .hero {
   width: 80%;
+  border-radius: 5px;
 }
 .omoss main {
   width: 100%;
@@ -522,8 +525,9 @@ nav #navbar img {
 }
 #referenserBODY h1 {
   text-align: center;
+  font-size: 2rem;
 }
-#referenserBODY #referenser {
+#referenserBODY #reviewCards {
   margin-top: 2rem;
   min-height: 80vh;
   display: flex;
@@ -531,7 +535,7 @@ nav #navbar img {
   align-items: center;
   justify-content: center;
 }
-#referenserBODY #referenser .reviewCard {
+#referenserBODY #reviewCards .reviewCard {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -540,30 +544,30 @@ nav #navbar img {
   margin-bottom: 4rem;
   margin-top: 2rem;
 }
-#referenserBODY #referenser .reviewCard img {
+#referenserBODY #reviewCards .reviewCard img {
   border-radius: 50%;
   width: 150px;
   height: 150px;
 }
-#referenserBODY #referenser .reviewCard h1 {
+#referenserBODY #reviewCards .reviewCard h2 {
   font-size: 2rem;
   margin-bottom: 0.5rem;
   margin-top: 1rem;
 }
-#referenserBODY #referenser .reviewCard .container {
+#referenserBODY #reviewCards .reviewCard .container {
   background-color: #db5c5c;
   border-radius: 0.5rem;
 }
-#referenserBODY #referenser .reviewCard .container .container {
+#referenserBODY #reviewCards .reviewCard .container .container {
   display: flex;
   justify-content: space-between;
   padding: 1rem;
   padding-bottom: 0;
 }
-#referenserBODY #referenser .reviewCard .container .container svg {
+#referenserBODY #reviewCards .reviewCard .container .container svg {
   color: yellow;
 }
-#referenserBODY #referenser .reviewCard .container p {
+#referenserBODY #reviewCards .reviewCard .container p {
   padding: 0 1rem;
   text-align: center;
   height: 100px;
@@ -576,13 +580,13 @@ nav #navbar img {
     justify-content: center;
     min-height: 80vh;
   }
-  #referenserBODY main #referenser {
+  #referenserBODY main #reviewCards {
     margin-top: 0;
     min-height: 0;
     flex-direction: row;
     align-items: center;
   }
-  #referenserBODY main #referenser .reviewCard {
+  #referenserBODY main #reviewCards .reviewCard {
     margin: 2rem;
   }
 }

@@ -98,16 +98,13 @@
                 flex-direction: column;
                 justify-content: space-between;
 
-                img{
-                    width: auto;
-                }
-
                 .display-none-mobile{
                     display: block;
                     font-size: $xl;
                     font-family: $font-1;
                     img{
-                        height: 70vh;
+                        width: auto;
+                        height: 600px;
                     }
                 }
 
@@ -118,7 +115,7 @@
     
             .form {
                 width: 40vw;
-                height: 70vh;
+                height: 600px;
                 display: flex;
                 flex-direction: column;
                 align-items: space-around;
