@@ -5,16 +5,17 @@
 
   .hero {
     width: 80%;
+    border-radius: 5px;
   }
 
-    main {
-        width: 100%;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        padding-top: 4rem;
-    }
+  main {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-top: 4rem;
+  }
 
   h2 {
     text-align: center;

@@ -357,6 +357,7 @@ nav #navbar img {
 }
 .omoss .hero {
   width: 80%;
+  border-radius: 5px;
 }
 .omoss main {
   width: 100%;
