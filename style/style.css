@@ -183,7 +183,7 @@ nav #navbar img {
 }
 .index .wrapper main button:hover {
   cursor: pointer;
-  border: solid 2px orange;
+  border: solid 2px darkorange;
   transition-duration: 300ms;
 }
 .index .wrapper .footer {
@@ -209,7 +209,7 @@ nav #navbar img {
   }
 }
 .index #link_home {
-  color: orange;
+  color: darkorange;
 }
 
 .kontakt {
@@ -288,7 +288,7 @@ nav #navbar img {
 }
 .kontakt .wrapper .form button:hover {
   cursor: pointer;
-  border: solid 2px orange;
+  border: solid 2px darkorange;
   transition-duration: 300ms;
 }
 @media (min-width: 1024px) {
@@ -345,7 +345,7 @@ nav #navbar img {
   }
 }
 .kontakt #link_kontakt {
-  color: orange;
+  color: darkorange;
 }
 
 /*Om oss*/
@@ -445,7 +445,7 @@ nav #navbar img {
   }
 }
 .omoss #link_about {
-  color: orange;
+  color: darkorange;
 }
 
 #produkterBODY {
@@ -509,11 +509,11 @@ nav #navbar img {
 }
 #produkterBODY #produkter .container .productCard button:hover {
   cursor: pointer;
-  border: solid 2px orange;
+  border: solid 2px darkorange;
   transition-duration: 300ms;
 }
 #produkterBODY #link_product {
-  color: orange;
+  color: darkorange;
 }
 
 #referenserBODY {
@@ -591,5 +591,5 @@ nav #navbar img {
   }
 }
 #referenserBODY #link_review {
-  color: orange;
+  color: darkorange;
 }/*# sourceMappingURL=style.css.map */
