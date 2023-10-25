@@ -312,14 +312,14 @@ nav #navbar img {
   }
   .kontakt .wrapper .images .display-none-mobile img {
     width: auto;
-    height: 600px;
+    height: 650px;
   }
   .kontakt .wrapper .images .display-none-desktop {
     display: none;
   }
   .kontakt .wrapper .form {
     width: 40vw;
-    height: 600px;
+    height: 650px;
     display: flex;
     flex-direction: column;
     align-items: space-around;
@@ -339,6 +339,7 @@ nav #navbar img {
   .kontakt .wrapper .form textarea {
     border-radius: 5px;
     width: 30vw;
+    min-height: 30px;
   }
   .kontakt .wrapper .form button {
     margin: 10;
