@@ -46,6 +46,10 @@ nav #navbar img {
 .scrollLock {
   overflow: hidden;
 }
+
+.bgWhite {
+  background-color: white;
+}
 @keyframes slide-in-top {
   0% {
     transform: translateY(-1000px);
