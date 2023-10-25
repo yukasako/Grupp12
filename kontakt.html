@@ -4,7 +4,10 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Kontakt</title>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css"/>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css"
+    />
     <link rel="stylesheet" href="style/style.css" />
   </head>
   <body class="kontakt">
@@ -44,10 +47,10 @@
     <div class="wrapper">
       <div class="images">
         <div class="display-none-mobile">
-          <img src="/img/office2.png" alt="office"/>
+          <img src="/img/office2.png" alt="office" />
         </div>
         <div class="display-none-desktop">
-          <img src="/img/office.png" alt="office"/>
+          <img src="/img/office.png" alt="office" />
         </div>
       </div>
 
@@ -55,36 +58,36 @@
         <h1>Contact us</h1>
 
         <div class="contacts">
-          <label for="">Name</label>
-          <input type="text" name="name" />
-          <label for="">Email </label>
-          <input type="email" name="email" />
-          <label for="">Phone number</label>
-          <input type="number" name="number" />
+          <label for="name">Name</label>
+          <input type="text" name="name" id="name" />
+          <label for="email">Email </label>
+          <input type="email" name="email" id="email" />
+          <label for="number">Phone number</label>
+          <input type="number" name="number" id="number" />
         </div>
 
         <div class="account-type">
           <label for="account-type">Account Type</label>
-            <div class="radio-options">
-              <label for="owner">
-                <input
-                  id="owner"
-                  type="radio"
-                  name="account-type"
-                  class="inline"
-                  />
-                Pet Owner
-              </label>
-              <label for="renter">
-                <input
-                  id="renter"
-                  type="radio"
-                  name="account-type"
-                  class="inline"
-                />
-                Caretaker
-              </label>
-            </div>
+          <div class="radio-options">
+            <label for="owner">
+              <input
+                id="owner"
+                type="radio"
+                name="account-type"
+                class="inline"
+              />
+              Pet Owner
+            </label>
+            <label for="renter">
+              <input
+                id="renter"
+                type="radio"
+                name="account-type"
+                class="inline"
+              />
+              Caretaker
+            </label>
+          </div>
         </div>
 
         <div class="topic">
@@ -99,10 +102,11 @@
         </div>
 
         <textarea
-              id="bio"
-              name="message"
-              rows="5"
-              placeholder="Write the text...">
+          id="bio"
+          name="message"
+          rows="5"
+          placeholder="Write the text..."
+        >
         </textarea>
         <button>Submit</button>
       </div>
@@ -122,9 +126,14 @@
       <hr class="line" />
 
       <div class="footer-container">
-
         <div class="footer-links">
           <img src="./img/logo.png" alt="Logo" />
+
+          <a href="#">Home</a>
+          <a href="#">About Us</a>
+          <a href="#">Products</a>
+          <a href="#">Contact</a>
+
           <a href="./index.html">Home</a>
           <a href="./omoss.html">About Us</a>
           <a href="./produkt.html">Products</a>
@@ -140,7 +149,6 @@
           </div>
         </div>
       </div>
-
     </footer>
   </body>
   <script src="./script.js"></script>
