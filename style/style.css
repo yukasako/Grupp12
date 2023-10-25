@@ -301,23 +301,21 @@ nav #navbar img {
     flex-direction: column;
     justify-content: space-between;
   }
-  .kontakt .wrapper .images img {
-    width: auto;
-  }
   .kontakt .wrapper .images .display-none-mobile {
     display: block;
     font-size: 4rem;
     font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
   }
   .kontakt .wrapper .images .display-none-mobile img {
-    height: 70vh;
+    width: auto;
+    height: 600px;
   }
   .kontakt .wrapper .images .display-none-desktop {
     display: none;
   }
   .kontakt .wrapper .form {
     width: 40vw;
-    min-height: 70vh;
+    height: 600px;
     display: flex;
     flex-direction: column;
     align-items: space-around;
