@@ -46,6 +46,10 @@ nav #navbar img {
 .scrollLock {
   overflow: hidden;
 }
+
+.bgWhite {
+  background-color: white;
+}
 @keyframes slide-in-top {
   0% {
     transform: translateY(-1000px);
@@ -143,7 +147,7 @@ nav #navbar img {
 }
 .index .wrapper {
   height: 100vh;
-  background: url("../../img/topImage-1.jpg") no-repeat center;
+  background: url("https://raw.githubusercontent.com/yukasako/Grupp12/main/img/topImage-1.jpg") no-repeat center;
   background-size: cover;
   font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
   margin: 0;
@@ -179,7 +183,7 @@ nav #navbar img {
 }
 .index .wrapper main button:hover {
   cursor: pointer;
-  border: solid 2px orange;
+  border: solid 2px darkorange;
   transition-duration: 300ms;
 }
 .index .wrapper .footer {
@@ -205,7 +209,7 @@ nav #navbar img {
   }
 }
 .index #link_home {
-  color: orange;
+  color: darkorange;
 }
 
 .kontakt {
@@ -284,7 +288,7 @@ nav #navbar img {
 }
 .kontakt .wrapper .form button:hover {
   cursor: pointer;
-  border: solid 2px orange;
+  border: solid 2px darkorange;
   transition-duration: 300ms;
 }
 @media (min-width: 1024px) {
@@ -308,14 +312,14 @@ nav #navbar img {
   }
   .kontakt .wrapper .images .display-none-mobile img {
     width: auto;
-    height: 600px;
+    height: 650px;
   }
   .kontakt .wrapper .images .display-none-desktop {
     display: none;
   }
   .kontakt .wrapper .form {
     width: 40vw;
-    height: 600px;
+    height: 650px;
     display: flex;
     flex-direction: column;
     align-items: space-around;
@@ -335,13 +339,14 @@ nav #navbar img {
   .kontakt .wrapper .form textarea {
     border-radius: 5px;
     width: 30vw;
+    min-height: 30px;
   }
   .kontakt .wrapper .form button {
     margin: 10;
   }
 }
 .kontakt #link_kontakt {
-  color: orange;
+  color: darkorange;
 }
 
 /*Om oss*/
@@ -351,6 +356,7 @@ nav #navbar img {
 }
 .omoss .hero {
   width: 80%;
+  border-radius: 5px;
 }
 .omoss main {
   width: 100%;
@@ -380,7 +386,7 @@ nav #navbar img {
 .omoss .timeline-list-item .date {
   width: 20%;
   padding: 0 0 0 20px;
-  color: #888888;
+  color: black;
   font-weight: bold;
 }
 .omoss .timeline-list-item .content {
@@ -440,7 +446,7 @@ nav #navbar img {
   }
 }
 .omoss #link_about {
-  color: orange;
+  color: darkorange;
 }
 
 #produkterBODY {
@@ -504,11 +510,11 @@ nav #navbar img {
 }
 #produkterBODY #produkter .container .productCard button:hover {
   cursor: pointer;
-  border: solid 2px orange;
+  border: solid 2px darkorange;
   transition-duration: 300ms;
 }
 #produkterBODY #link_product {
-  color: orange;
+  color: darkorange;
 }
 
 #referenserBODY {
@@ -520,8 +526,9 @@ nav #navbar img {
 }
 #referenserBODY h1 {
   text-align: center;
+  font-size: 2rem;
 }
-#referenserBODY #referenser {
+#referenserBODY #reviewCards {
   margin-top: 2rem;
   min-height: 80vh;
   display: flex;
@@ -529,7 +536,7 @@ nav #navbar img {
   align-items: center;
   justify-content: center;
 }
-#referenserBODY #referenser .reviewCard {
+#referenserBODY #reviewCards .reviewCard {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -538,30 +545,30 @@ nav #navbar img {
   margin-bottom: 4rem;
   margin-top: 2rem;
 }
-#referenserBODY #referenser .reviewCard img {
+#referenserBODY #reviewCards .reviewCard img {
   border-radius: 50%;
   width: 150px;
   height: 150px;
 }
-#referenserBODY #referenser .reviewCard h1 {
+#referenserBODY #reviewCards .reviewCard h2 {
   font-size: 2rem;
   margin-bottom: 0.5rem;
   margin-top: 1rem;
 }
-#referenserBODY #referenser .reviewCard .container {
+#referenserBODY #reviewCards .reviewCard .container {
   background-color: #db5c5c;
   border-radius: 0.5rem;
 }
-#referenserBODY #referenser .reviewCard .container .container {
+#referenserBODY #reviewCards .reviewCard .container .container {
   display: flex;
   justify-content: space-between;
   padding: 1rem;
   padding-bottom: 0;
 }
-#referenserBODY #referenser .reviewCard .container .container svg {
+#referenserBODY #reviewCards .reviewCard .container .container svg {
   color: yellow;
 }
-#referenserBODY #referenser .reviewCard .container p {
+#referenserBODY #reviewCards .reviewCard .container p {
   padding: 0 1rem;
   text-align: center;
   height: 100px;
@@ -574,16 +581,16 @@ nav #navbar img {
     justify-content: center;
     min-height: 80vh;
   }
-  #referenserBODY main #referenser {
+  #referenserBODY main #reviewCards {
     margin-top: 0;
     min-height: 0;
     flex-direction: row;
     align-items: center;
   }
-  #referenserBODY main #referenser .reviewCard {
+  #referenserBODY main #reviewCards .reviewCard {
     margin: 2rem;
   }
 }
 #referenserBODY #link_review {
-  color: orange;
+  color: darkorange;
 }/*# sourceMappingURL=style.css.map */

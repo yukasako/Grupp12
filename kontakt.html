@@ -4,14 +4,17 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Kontakt</title>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css"/>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css"
+    />
     <link rel="stylesheet" href="style/style.css" />
   </head>
   <body class="kontakt">
     <header>
       <nav>
         <div id="navbar">
-          <img src="/img/logo.png" alt="logo" />
+          <img src="./img/logo.png" alt="logo" />
           <svg
             id="hamburger"
             xmlns="http://www.w3.org/2000/svg"
@@ -44,10 +47,10 @@
     <div class="wrapper">
       <div class="images">
         <div class="display-none-mobile">
-          <img src="/img/office2.png" alt="office"/>
+          <img src="./img/office2.png" alt="office" />
         </div>
         <div class="display-none-desktop">
-          <img src="/img/office.png" alt="office"/>
+          <img src="./img/office.png" alt="office" />
         </div>
       </div>
 
@@ -55,40 +58,40 @@
         <h1>Contact us</h1>
 
         <div class="contacts">
-          <label for="">Name</label>
-          <input type="text" name="name" />
-          <label for="">Email </label>
-          <input type="email" name="email" />
-          <label for="">Phone number</label>
-          <input type="number" name="number" />
+          <label for="name">Name</label>
+          <input type="text" name="name" id="name" />
+          <label for="email">Email </label>
+          <input type="email" name="email" id="email" />
+          <label for="number">Phone number</label>
+          <input type="number" name="number" id="number" />
         </div>
 
         <div class="account-type">
-          <label for="account-type">Account Type</label>
-            <div class="radio-options">
-              <label for="owner">
-                <input
-                  id="owner"
-                  type="radio"
-                  name="account-type"
-                  class="inline"
-                  />
-                Pet Owner
-              </label>
-              <label for="renter">
-                <input
-                  id="renter"
-                  type="radio"
-                  name="account-type"
-                  class="inline"
-                />
-                Caretaker
-              </label>
-            </div>
+          <p>Account Type</p>
+          <div class="radio-options">
+            <label for="owner">
+              <input
+                id="owner"
+                type="radio"
+                name="account-type"
+                class="inline"
+              />
+              Pet Owner
+            </label>
+            <label for="renter">
+              <input
+                id="renter"
+                type="radio"
+                name="account-type"
+                class="inline"
+              />
+              Caretaker
+            </label>
+          </div>
         </div>
 
         <div class="topic">
-          <label for="topic">Topic of your mail</label>
+          <p>Topic of your mail</p>
           <select name="topic">
             <option value="">(select one)</option>
             <option value="1">Pet Owner Registration</option>
@@ -99,10 +102,11 @@
         </div>
 
         <textarea
-              id="bio"
-              name="message"
-              rows="5"
-              placeholder="Write the text...">
+          id="bio"
+          name="message"
+          rows="5"
+          placeholder="Write the text..."
+        >
         </textarea>
         <button>Submit</button>
       </div>
@@ -111,18 +115,17 @@
     <footer class="footer">
       <div class="address">
         <div class="address-item">
-          <img src="/img/icon_addres.png" alt="" />
+          <img src="./img/icon_addres.png" alt="" />
           <span>Sveavägen, 11</span>
         </div>
         <div class="address-item">
-          <img src="/img/icone_phone.png" alt="" />
+          <img src="./img/icone_phone.png" alt="" />
           <span>(000) 000 00 00</span>
         </div>
       </div>
       <hr class="line" />
 
       <div class="footer-container">
-
         <div class="footer-links">
           <img src="./img/logo.png" alt="Logo" />
           <a href="./index.html">Home</a>
@@ -140,7 +143,6 @@
           </div>
         </div>
       </div>
-
     </footer>
   </body>
   <script src="./script.js"></script>
